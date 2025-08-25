@@ -8,9 +8,9 @@
     "build": "tsc -b && vite build",
     "format": "prettier . --ignore-path .gitignore --write",
     "lint": "eslint . --fix",
-    "fix-style": "npm run format & npm run lint",
+    "fix-style": "prettier --write . && eslint --fix .",
     "preview": "vite preview",
-    "prepare": "husky && husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.32.0",
