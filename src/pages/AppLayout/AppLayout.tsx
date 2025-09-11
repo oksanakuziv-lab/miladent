@@ -15,7 +15,7 @@ export const AppLayout = () => {
   return (
     <div>
       <Header />
-      <main>
+      <main className="pt-28">
         <Outlet />
       </main>
     </div>

@@ -1,8 +1,18 @@
 @import 'tailwindcss';
 @import 'react-phone-input-2/lib/style.css';
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-fade';
+
 @theme {
   --color-primary: #dc9b7c;
+  --color-primary-light: #f0c8b0;
+  --color-primary-lighter: #f8e1d5;
+  --color-primary-dark: #b36d53;
+  --color-primary-darker: #874939;
+  --color-accent: #e6b08d;
   --color-black: #000000;
   --color-secondary: #ae7963;
 }

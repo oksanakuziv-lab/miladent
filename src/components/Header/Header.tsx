@@ -23,7 +23,7 @@ export const Header = () => {
   }, [location.pathname]);
 
   return (
-    <header className="bg-white">
+    <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -60,7 +60,7 @@ export const Header = () => {
               key={item.url}
               to={item.url}
               className={({ isActive }) =>
-                `text-sm font-medium relative px-3 py-2 
+                `text-md font-medium relative px-3 py-2 
        ${
          isActive ?
            'text-gray-900 font-semibold after:w-full after:h-1 after:bg-primary after:absolute after:bottom-0 after:left-0 after:rounded'
@@ -85,7 +85,7 @@ export const Header = () => {
         className="lg:hidden"
       >
         <div className="fixed" />
-        <DialogPanel className="fixed inset-0 overflow-y-auto bg-white p-6">
+        <DialogPanel className="fixed inset-0 z-40 overflow-y-auto bg-white p-6">
           <div className="flex items-center justify-between">
             <NavLink
               to="/"
