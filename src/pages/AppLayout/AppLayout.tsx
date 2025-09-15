@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
 
 export const AppLayout = () => {
   const { pathname } = useLocation();
@@ -18,6 +19,7 @@ export const AppLayout = () => {
       <main className="pt-28">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };
