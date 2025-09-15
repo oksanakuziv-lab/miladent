@@ -1,6 +1,3 @@
-import React from 'react';
-import cn from 'classnames';
-
 type SliderButtonProps = {
   disabled?: boolean;
   icon: React.ReactNode;
@@ -22,11 +19,7 @@ export const SliderButton: React.FC<SliderButtonProps> = ({
       ref={ref}
       disabled={disabled}
       onClick={onClick}
-      className={cn(
-        'flex items-center justify-center w-6 h-8 hover:scale-110',
-        'text-white-400 bg-white hover:text-red ',
-        className,
-      )}
+      className={`flex items-center justify-center w-6 h-8 hover:scale-110 text-white-400 bg-white hover:text-red ${className || ''}`}
     >
       {icon}
     </button>
