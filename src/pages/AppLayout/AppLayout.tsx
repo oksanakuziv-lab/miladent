@@ -16,7 +16,7 @@ export const AppLayout = () => {
   return (
     <div>
       <Header />
-      <main className="pt-28">
+      <main className="pt-28 max-w-7xl mx-auto">
         <Outlet />
       </main>
       <Footer />

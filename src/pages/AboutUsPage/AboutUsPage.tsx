@@ -1,3 +1,5 @@
+import { ClinicOverviewSection } from './components/ClinicOverviewSection';
+
 export const AboutUsPage = () => {
-  return <p></p>;
+  return <ClinicOverviewSection />;
 };

@@ -5,23 +5,21 @@ import { GmailIcon } from '../../ui/icons/GmailIcon';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-gray-100 text-gray-700 py-10">
+    <footer className="w-full bg-gradient-to-b from-primary-soft to-primary-lighter text-primary-darker p-8 py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
         <div className="flex flex-col items-start gap-4 ">
           <NavLink to="/">
             <img
               src="logo.png"
-              alt="Mila denta logo"
+              alt="Miladent logo"
               className="h-16 w-auto"
             />
           </NavLink>
-          <p className="text-sm">Mila Denta Clinic</p>
+          <p className="text-sm">Miladent Clinic</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-18 text-sm flex-wrap">
-          <p className="font-semibold">
-            Krškova 807/21, Prague, Czech Republic 15200
-          </p>
+          <p>Krškova 807/21, Prague, Czech Republic 15200</p>
 
           <a
             href="mailto:miladentpraha@gmail.com"
@@ -47,13 +45,13 @@ export const Footer: React.FC = () => {
             target="blank"
           >
             <InstagramIcon />
-            miladentpraha
+            Instagram
           </a>
         </div>
       </div>
 
-      <div className="mt-8 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} Mila Denta. All rights reserved.
+      <div className="mt-8 text-center text-xs">
+        &copy; {new Date().getFullYear()} Miladent. All rights reserved.
       </div>
     </footer>
   );

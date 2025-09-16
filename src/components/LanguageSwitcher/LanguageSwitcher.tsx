@@ -19,7 +19,7 @@ export const LanguageSwitcher = () => {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="mt-2 w-24 rounded-md border border-gray-200 bg-white shadow-lg focus:outline-none">
+        <DropdownMenu.Content className="mt-2 w-24 rounded-md border border-gray-200 bg-white shadow-lg focus:outline-none z-60">
           {languages.map((lang) => (
             <DropdownMenu.Item
               key={lang.code}
