@@ -13,7 +13,7 @@ export const LanguageSwitcher = () => {
 
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
+      <DropdownMenu.Trigger className="btn btn-outline">
         {currentLang.label}
         <ChevronDownIcon className="h-4 w-4" />
       </DropdownMenu.Trigger>
@@ -24,7 +24,7 @@ export const LanguageSwitcher = () => {
             <DropdownMenu.Item
               key={lang.code}
               onSelect={() => setCurrentLang(lang)}
-              className="cursor-pointer px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              className="cursor-pointer px-3 py-2 text-sm"
             >
               {lang.label}
             </DropdownMenu.Item>

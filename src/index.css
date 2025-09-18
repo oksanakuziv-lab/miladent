@@ -16,3 +16,27 @@
   --color-black: #000000;
   --color-secondary: #ae7963;
 }
+
+.btn {
+  @apply inline-flex items-center justify-center font-semibold rounded-xl transition duration-300;
+}
+
+.btn-primary {
+  @apply text-white shadow-md px-8 py-2
+    bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]
+    hover:from-[var(--color-primary-light)] hover:to-[var(--color-primary)]
+    active:bg-[var(--color-primary-darker)];
+}
+
+.btn-outline {
+  @apply text-sm bg-transparent border-1 box-border px-4 py-2 
+    border-[var(--color-primary)] text-[var(--color-primary-dark)]
+    hover:bg-[var(--color-primary)] hover:text-[var(--color-white)] active:bg-[var(--color-primary-light)];
+}
+
+.btn-secondary {
+  @apply text-white rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold px-8 py-4  inline-flex items-center gap-2
+    bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]
+    hover:from-[var(--color-primary-light)] hover:to-[var(--color-primary)]
+    active:bg-[var(--color-primary-darker)];
+}

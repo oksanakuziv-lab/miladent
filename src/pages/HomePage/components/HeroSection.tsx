@@ -34,7 +34,7 @@ export const HeroSection: React.FC = () => {
           <a
             target="_blank"
             href="https://miladentpraha.xdent.cz/wizard/clinic-selection?fbclid=PAZXh0bgNhZW0CMTEAAaccyLdfWS7vFzHzHLQhxAIDuxk2TWFe-iTOJvzIPy25x-AmHvlE0npvc-l7rg_aem_vT4YxIzcxir27yfpdxUNkg"
-            className="bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
+            className="btn btn-secondary"
           >
             Booking Now →
           </a>

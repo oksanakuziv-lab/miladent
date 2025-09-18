@@ -11,9 +11,7 @@ export const ContactModal = () => {
       onOpenChange={setOpen}
     >
       <Dialog.Trigger asChild>
-        <button className="px-8 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition">
-          Contact Us
-        </button>
+        <button className="btn btn-primary">Contact Us</button>
       </Dialog.Trigger>
 
       <Dialog.Portal>
@@ -29,11 +27,12 @@ export const ContactModal = () => {
             href="https://miladentpraha.xdent.cz/wizard/clinic-selection?fbclid=PAZXh0bgNhZW0CMTEAAaccyLdfWS7vFzHzHLQhxAIDuxk2TWFe-iTOJvzIPy25x-AmHvlE0npvc-l7rg_aem_vT4YxIzcxir27yfpdxUNkg"
             target="_blanc"
             rel="noopener noreferrer"
-            className="w-full mb-6 rounded-full border bg-primary border-secondary text-white py-2 hover:bg-secondary transition text-center block"
+            className="w-full btn btn-primary"
           >
             Book Appointment
           </a>
-          <Dialog.Description className="mb-6 text-gray-600">
+
+          <Dialog.Description className="mb-6 mt-6 text-gray-600">
             Or fill out the form and we’ll get back to you shortly.
           </Dialog.Description>
 

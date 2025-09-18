@@ -56,7 +56,7 @@ export const AboutSection = () => {
           <div>
             <Link
               to="/about"
-              className="bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
+              className="btn btn-secondary"
             >
               Learn More
               <ArrowIcon />

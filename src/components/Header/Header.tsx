@@ -23,7 +23,7 @@ export const Header = () => {
   }, [location.pathname]);
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
+    <header className="w-full fixed top-0 left-0 z-50 bg-gradient-to-b from-primary-soft to-primary-lighter shadow-md">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"

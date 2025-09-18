@@ -26,7 +26,7 @@ export const ContactFrom: React.FC = () => {
 
       <button
         type="submit"
-        className="w-full rounded-full border py-2 text-black hover:bg-black hover:text-white transition"
+        className="w-full btn btn-outline"
       >
         Send Message
       </button>
