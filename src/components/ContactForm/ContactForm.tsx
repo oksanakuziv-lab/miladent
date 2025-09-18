@@ -11,16 +11,16 @@ export const ContactFrom: React.FC = () => {
       <input
         name="name"
         placeholder="Full Name"
-        className="border rounded-sm border-gray-400 bg-transparent p-2 outline-none"
+        className="border rounded-sm border-primary bg-transparent p-2 outline-none"
       />
       <input
         type="tel"
         placeholder="Phone number"
-        className="border rounded-sm border-gray-400 bg-transparent p-2 outline-none"
+        className="border rounded-sm border-primary bg-transparent p-2 outline-none"
       />
       <textarea
         placeholder="message"
-        className="border rounded-sm border-gray-400 bg-transparent p-2 outline-none"
+        className="border rounded-sm border-primary bg-transparent p-2 outline-none"
         rows={3}
       />
 

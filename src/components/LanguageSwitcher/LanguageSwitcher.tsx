@@ -24,7 +24,7 @@ export const LanguageSwitcher = () => {
             <DropdownMenu.Item
               key={lang.code}
               onSelect={() => setCurrentLang(lang)}
-              className="cursor-pointer px-3 py-2 text-sm"
+              className="cursor-pointer px-3 py-2 text-sm bg-primary-soft"
             >
               {lang.label}
             </DropdownMenu.Item>
