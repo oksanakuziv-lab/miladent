@@ -1,6 +1,6 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { useState } from 'react';
-import { ContactFrom } from '../ContactForm';
+import { ContactForm } from '../ContactForm';
 
 export const ContactModal = () => {
   const [open, setOpen] = useState(false);
@@ -36,7 +36,7 @@ export const ContactModal = () => {
             Or fill out the form and we’ll get back to you shortly.
           </Dialog.Description>
 
-          <ContactFrom />
+          <ContactForm />
 
           <Dialog.Close asChild>
             <button
