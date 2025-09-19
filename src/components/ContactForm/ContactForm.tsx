@@ -7,6 +7,7 @@ export const ContactFrom: React.FC = () => {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -14,12 +15,30 @@ export const ContactFrom: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setFormData({ name: '', phone: '', message: '' });
+  const encode = (data: Record<string, string>) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]),
+      )
+      .join('&');
+  };
 
-    setTimeout(() => setSubmitted(false), 3000);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...formData }),
+      });
+
+      setSubmitted(true);
+      setFormData({ name: '', phone: '', message: '' });
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch {
+      setError('Something went wrong. Please try again.');
+    }
   };
 
   return (
@@ -27,8 +46,8 @@ export const ContactFrom: React.FC = () => {
       name="contact"
       method="POST"
       data-netlify="true"
-      className="flex flex-col gap-4"
       onSubmit={handleSubmit}
+      className="flex flex-col gap-4"
     >
       <input
         type="hidden"
@@ -70,10 +89,9 @@ export const ContactFrom: React.FC = () => {
       </button>
 
       {submitted && (
-        <p className="text-grey-900">
-          Thank you! Your message has been successfully sent.
-        </p>
+        <p className="text-grey-900">Thank you! Your message has been sent.</p>
       )}
+      {error && <p className="text-red-600">{error}</p>}
     </form>
   );
 };
