@@ -17,6 +17,13 @@
   --color-secondary: #ae7963;
 }
 
+@layer utilities {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fdf5f2 inset;
+    -webkit-text-fill-color: #111;
+  }
+}
+
 .btn {
   @apply inline-flex items-center justify-center font-semibold rounded-xl transition duration-300;
 }

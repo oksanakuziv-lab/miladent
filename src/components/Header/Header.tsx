@@ -34,7 +34,7 @@ export const Header = () => {
             className="-m-1.5 p-1.5"
           >
             <img
-              alt="Mila denta logo"
+              alt="Miladent logo"
               src="logo.png"
               className="h-16 w-auto lg:mr-16"
             />

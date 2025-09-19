@@ -74,7 +74,7 @@ export const ServicesSection: React.FC = () => {
       <div className="flex justify-between items-center mb-6">
         <Link
           to={'/services'}
-          className="text-2xl sm:text-3xl font-bold"
+          className="text-2xl sm:text-3xl font-bold text-primary-dark"
         >
           Services
         </Link>

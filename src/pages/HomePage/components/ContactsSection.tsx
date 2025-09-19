@@ -36,7 +36,7 @@ export const ContactsSection: React.FC = () => {
     <section className="py-16">
       <div className="mx-auto flex flex-col md:flex-row items-start md:items-center gap-8 px-6 lg:px-12">
         <div className="md:w-1/3 space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900">Get In Touch</h2>
+          <h2 className="text-3xl font-bold text-primary-dark">Get In Touch</h2>
           {contacts.map(({ type, value, href, Icon, external }) => (
             <a
               key={type}

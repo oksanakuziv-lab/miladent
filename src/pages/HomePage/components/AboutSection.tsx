@@ -29,7 +29,7 @@ export const AboutSection = () => {
             About Us
           </p>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight cursor-default">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-dark leading-tight cursor-default">
             Patient-Centered Care
           </h2>
 
@@ -44,7 +44,7 @@ export const AboutSection = () => {
           </p>
 
           <div>
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 cursor-default">
+            <h3 className="text-lg sm:text-xl font-bold text-primary-dark mb-6 cursor-default">
               Our Mission
             </h3>
             <p className="text-gray-600 leading-relaxed cursor-default">

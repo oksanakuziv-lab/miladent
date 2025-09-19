@@ -22,9 +22,7 @@ export const HeroSection: React.FC = () => {
     <section className="relative bg-white py-8 px-6 lg:px-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-8">
-          <h1 className="text-4xl font-bold leading-snug cursor-default">
-            Welcome to Miladent:
-            <br />
+          <h1 className="text-6xl font-bold leading-snug cursor-default text-primary-dark">
             Healthy teeth, peace of mind for you.
           </h1>
           <h4 className="text-2xl cursor-default">
@@ -46,7 +44,7 @@ export const HeroSection: React.FC = () => {
         />
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-12 relative z-20">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-4 relative z-20">
         {features.map((item) => (
           <div
             key={item.title}
