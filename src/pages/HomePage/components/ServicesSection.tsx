@@ -121,7 +121,7 @@ export const ServicesSection: React.FC = () => {
                   <p className="text-gray-600">{service.description}</p>
                   <Link
                     to="/services"
-                    className="block mt-6 text-primary hover:underline font-medium"
+                    className="block mt-6 text-primary-dark hover:underline font-medium"
                   >
                     Detail →
                   </Link>

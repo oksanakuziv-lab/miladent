@@ -1,6 +1,7 @@
 type Props = {
   className?: string;
 };
+
 export const CheckIcon: React.FC<Props> = ({ className }) => {
   return (
     <svg

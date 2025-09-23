@@ -19,10 +19,38 @@ const features = [
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative bg-white py-8 px-6 lg:px-16">
-      <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+    <section className="relative bg-white lg:px-16 lg:py-8">
+      <div className="lg:hidden relative h-[630px] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src="/HeroPhoto.jpg"
+            alt="Dentist consulting a patient"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+
+        <div className="relative z-10 text-white space-y-6 px-4">
+          <h1 className="text-4xl font-bold leading-snug">
+            Healthy teeth, peace of mind for you.
+          </h1>
+          <h4 className="text-md">
+            Comprehensive dental care – from preventive check-ups to complex
+            procedures
+          </h4>
+          <a
+            target="_blank"
+            href="https://miladentpraha.xdent.cz/wizard/clinic-selection?fbclid=PAZXh0bgNhZW0CMTEAAaccyLdfWS7vFzHzHLQhxAIDuxk2TWFe-iTOJvzIPy25x-AmHvlE0npvc-l7rg_aem_vT4YxIzcxir27yfpdxUNkg"
+            className="btn btn-secondary"
+          >
+            Booking Now →
+          </a>
+        </div>
+      </div>
+
+      <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-8">
-          <h1 className="text-6xl font-bold leading-snug cursor-default text-primary-dark">
+          <h1 className="text-5xl font-bold leading-snug cursor-default text-primary-dark">
             Healthy teeth, peace of mind for you.
           </h1>
           <h4 className="text-2xl cursor-default">
@@ -40,17 +68,17 @@ export const HeroSection: React.FC = () => {
         <img
           src="/HeroPhoto.jpg"
           alt="Dentist consulting a patient"
-          className="w-full h-[400px] lg:h-[500px] object-cover rounded-2xl"
+          className="w-full h-[500px] object-cover rounded-2xl"
         />
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-4 relative z-20">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-4 relative z-20 px-4 lg:px-0">
         {features.map((item) => (
           <div
             key={item.title}
-            className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+            className="bg-primary-soft p-6 rounded-2xl shadow hover:shadow-lg transition"
           >
-            <h3 className="mt-4 font-semibold cursor-default">{item.title}</h3>
+            <h3 className="font-semibold cursor-default">{item.title}</h3>
             <p className="text-sm text-gray-600 mt-2 cursor-default">
               {item.desc}
             </p>

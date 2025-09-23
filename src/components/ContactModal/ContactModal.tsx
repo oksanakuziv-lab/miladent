@@ -1,6 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { useState } from 'react';
 import { ContactForm } from '../ContactForm';
+import { CancelIcon } from '../../ui/icons/CancelIcon';
 
 export const ContactModal = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ export const ContactModal = () => {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50 z-50" />
         <Dialog.Content className="fixed left-1/2 top-1/2 w-[90%] max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-[#f8f6f2] p-6 shadow-xl z-50">
-          <Dialog.Title className="text-2xl font-serif mb-4">
+          <Dialog.Title className="text-2xl font-serif mb-4 text-primary-dark">
             Contact Us
           </Dialog.Title>
           <Dialog.Description className="mb-6 text-gray-600">
@@ -43,7 +44,7 @@ export const ContactModal = () => {
               className="absolute right-4 top-4 text-gray-500 hover:text-black"
               aria-label="Close"
             >
-              ✕
+              <CancelIcon />
             </button>
           </Dialog.Close>
         </Dialog.Content>

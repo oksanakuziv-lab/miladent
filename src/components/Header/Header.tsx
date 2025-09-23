@@ -1,9 +1,17 @@
 import { useEffect, useState } from 'react';
-import { Dialog, DialogPanel, PopoverGroup } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  Dialog,
+  DialogPanel,
+  PopoverGroup,
+  Transition,
+  TransitionChild,
+} from '@headlessui/react';
+import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { NavLink, useLocation } from 'react-router-dom';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 import { ContactModal } from '../ContactModal';
+import { MenuIcon } from '../../ui/icons/MenuIcon';
+import { CancelIcon } from '../../ui/icons/CancelIcon';
 
 const navItems = [
   { label: 'Home', url: '/' },
@@ -44,12 +52,20 @@ export const Header = () => {
         <div className="flex lg:hidden items-center gap-4">
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            className="relative w-8 h-8 inline-flex items-center justify-center outline-none"
           >
-            <Bars3Icon
+            <MenuIcon
               aria-hidden="true"
-              className="size-6"
+              className={`absolute inset-0 transition-all duration-300 ease-in-out transform ${
+                mobileMenuOpen ? 'opacity-0 scale-50' : 'opacity-100 scale-100'
+              }`}
+            />
+            <CancelIcon
+              aria-hidden="true"
+              className={`absolute inset-0 transition-all duration-300 ease-in-out transform ${
+                mobileMenuOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
+              }`}
             />
           </button>
         </div>
@@ -84,54 +100,63 @@ export const Header = () => {
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
-        <div className="fixed" />
-        <DialogPanel className="fixed inset-0 z-40 overflow-y-auto bg-white p-6">
-          <div className="flex items-center justify-between">
-            <NavLink
-              to="/"
-              className="-m-1.5 p-1.5"
-            >
-              <img
-                alt="Mila denta logo"
-                src="logo.png"
-                className="h-16 w-auto"
-              />
-            </NavLink>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
-              <XMarkIcon
-                aria-hidden="true"
-                className="size-6"
-              />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+        <Transition
+          appear
+          show={mobileMenuOpen}
+          unmount={false}
+        >
+          <TransitionChild
+            enter="transition ease-out duration-300"
+            enterFrom="-translate-y-full opacity-0"
+            enterTo="translate-y-0 opacity-100"
+            leave="transition ease-in duration-300"
+            leaveFrom="translate-y-0 opacity-100"
+            leaveTo="-translate-y-full opacity-0"
+          >
+            <DialogPanel className="fixed inset-0 z-40 overflow-y-auto bg-white p-6">
+              <div className="flex items-center justify-between">
+                <NavLink
+                  to="/"
+                  className="-m-1.5 p-1.5"
+                >
+                  <img
+                    alt="Miladent logo"
+                    src="logo.png"
+                    className="h-16 w-auto"
+                  />
+                </NavLink>
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-8 h-8"
+                ></button>
+              </div>
+              <div className="space-y-2 pt-12">
                 {navItems.map((item) => (
                   <NavLink
                     key={item.url}
                     to={item.url}
                     className={({ isActive }) =>
-                      `mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50 ${
-                        isActive ? 'text-gray-900' : 'text-gray-600'
-                      }`
+                      `mx-3 flex justify-between py-4 text-md font-medium hover:bg-gray-50 border-b border-primary-soft
+                    active:bg-primary-soft transition-colors duration-200 ${
+                      isActive ? 'text-gray-900' : 'text-gray-600'
+                    }`
                     }
                   >
                     {item.label}
+                    <span>
+                      <ArrowLongRightIcon className="size-4 opacity-50" />
+                    </span>
                   </NavLink>
                 ))}
               </div>
-              <div className="py-6 flex flex-col gap-4 px-3">
+              <div className="py-6 flex flex-col gap-6 px-3">
                 <ContactModal />
                 <LanguageSwitcher />
               </div>
-            </div>
-          </div>
-        </DialogPanel>
+            </DialogPanel>
+          </TransitionChild>
+        </Transition>
       </Dialog>
     </header>
   );

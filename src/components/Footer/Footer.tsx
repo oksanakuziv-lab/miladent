@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { InstagramIcon } from '../../ui/icons/InstagramIcon';
 import { PhoneIcon } from '../../ui/icons/PhoneIcon';
 import { GmailIcon } from '../../ui/icons/GmailIcon';
+import { LocationIcon } from '../../ui/icons/LocationIcon';
 
 export const Footer: React.FC = () => {
   return (
@@ -19,7 +20,14 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-18 text-sm flex-wrap">
-          <p>Krškova 807/21, Prague, Czech Republic 15200</p>
+          <a
+            href="https://maps.app.goo.gl/6tABt7DLCUpSHtYC7"
+            className="flex items-center gap-2"
+            target="blank"
+          >
+            <LocationIcon />
+            Krškova 807/21, Prague, Czech Republic 15200
+          </a>
 
           <a
             href="mailto:miladentpraha@gmail.com"
