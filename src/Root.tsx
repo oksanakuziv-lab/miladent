@@ -4,7 +4,6 @@ import { HomePage } from './pages/HomePage';
 import { AboutUsPage } from './pages/AboutUsPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { PricesPage } from './pages/PricesPage';
-import { GalleryPage } from './pages/GalleryPage';
 
 export const Root: React.FC = () => {
   return (
@@ -26,10 +25,6 @@ export const Root: React.FC = () => {
           <Route
             path="prices"
             element={<PricesPage />}
-          />
-          <Route
-            path="gallery"
-            element={<GalleryPage />}
           />
         </Route>
       </Routes>

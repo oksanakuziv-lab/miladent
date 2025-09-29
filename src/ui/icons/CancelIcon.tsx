@@ -15,9 +15,9 @@ export const CancelIcon: React.FC<Props> = ({ className }) => {
       <path
         d="M19 5L5 19M5 5L19 19"
         stroke="#b36d53"
-        stroke-width="1"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

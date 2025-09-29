@@ -18,7 +18,6 @@ const navItems = [
   { label: 'About us', url: '/about' },
   { label: 'Services', url: '/services' },
   { label: 'Prices', url: '/prices' },
-  { label: 'Gallery', url: '/gallery' },
 ];
 
 export const Header = () => {
@@ -34,7 +33,7 @@ export const Header = () => {
     <header className="w-full fixed top-0 left-0 z-50 bg-gradient-to-b from-primary-soft to-primary-lighter shadow-md">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10 py-2 lg:py-3"
       >
         <div className="flex ">
           <NavLink
@@ -76,11 +75,11 @@ export const Header = () => {
               key={item.url}
               to={item.url}
               className={({ isActive }) =>
-                `text-md font-medium relative px-3 py-2 
+                `text-md relative px-3 py-2 uppercase text-textBlack
        ${
          isActive ?
-           'text-gray-900 font-semibold after:w-full after:h-1 after:bg-primary after:absolute after:bottom-0 after:left-0 after:rounded'
-         : 'text-gray-600 hover:text-gray-900 hover:after:w-full hover:after:h-[2px] hover:after:bg-primary hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:rounded'
+           'text-textBlack font-semibold after:w-full after:h-1 after:bg-primary after:absolute after:bottom-0 after:left-0 after:rounded'
+         : 'text-textGray hover:text-textBlack hover:after:w-full hover:after:h-[2px] hover:after:bg-primary hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:rounded'
        }`
               }
             >
@@ -113,7 +112,7 @@ export const Header = () => {
             leaveFrom="translate-y-0 opacity-100"
             leaveTo="-translate-y-full opacity-0"
           >
-            <DialogPanel className="fixed inset-0 z-40 overflow-y-auto bg-white p-6">
+            <DialogPanel className="fixed inset-0 z-40 overflow-y-auto bg-white px-6">
               <div className="flex items-center justify-between">
                 <NavLink
                   to="/"
@@ -131,16 +130,17 @@ export const Header = () => {
                   className="w-8 h-8"
                 ></button>
               </div>
-              <div className="space-y-2 pt-12">
+              <div className="space-y-2 pt-8">
                 {navItems.map((item) => (
                   <NavLink
                     key={item.url}
                     to={item.url}
                     className={({ isActive }) =>
-                      `mx-3 flex justify-between py-4 text-md font-medium hover:bg-gray-50 border-b border-primary-soft
-                    active:bg-primary-soft transition-colors duration-200 ${
-                      isActive ? 'text-gray-900' : 'text-gray-600'
-                    }`
+                      `flex justify-between py-4 text-md font-medium uppercase hover:bg-gray-50 border-b border-primary-soft ${
+                        isActive ?
+                          'text-textBlack border-b-accent'
+                        : 'text-textGray font-bold'
+                      }`
                     }
                   >
                     {item.label}

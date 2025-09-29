@@ -34,9 +34,11 @@ const contacts = [
 export const ContactsSection: React.FC = () => {
   return (
     <section className="py-16">
-      <div className="mx-auto flex flex-col md:flex-row items-start md:items-center gap-8 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center gap-8">
         <div className="md:w-1/3 space-y-4">
-          <h2 className="text-3xl font-bold text-primary-dark">Get In Touch</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark">
+            Get In Touch
+          </h2>
           {contacts.map(({ type, value, href, Icon, external }) => (
             <a
               key={type}
@@ -49,7 +51,7 @@ export const ContactsSection: React.FC = () => {
                 <Icon />
                 <span className="text-primary-dark font-medium">{type}</span>
               </div>
-              <span className="text-black font-sm ml-[26px]">{value}</span>
+              <span className="text-textBlack font-sm ml-[26px]">{value}</span>
             </a>
           ))}
         </div>

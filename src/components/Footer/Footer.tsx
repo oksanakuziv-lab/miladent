@@ -6,8 +6,8 @@ import { LocationIcon } from '../../ui/icons/LocationIcon';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-gradient-to-b from-primary-soft to-primary-lighter text-primary-darker p-8 py-10">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+    <footer className="py-10 bg-gradient-to-b from-primary-soft to-primary-lighter text-primary-darker">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
         <div className="flex flex-col items-start gap-4 ">
           <NavLink to="/">
             <img
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
           <a
             href="https://maps.app.goo.gl/6tABt7DLCUpSHtYC7"
             className="flex items-center gap-2"
-            target="blank"
+            target="_blank"
           >
             <LocationIcon />
             Krškova 807/21, Prague, Czech Republic 15200

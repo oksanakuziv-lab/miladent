@@ -70,11 +70,11 @@ export const ServicesSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="pt-6 md:pt-10 lg:pt-14 pb-14 lg:pb-20 max-w-6xl mx-auto px-4">
+    <section className="py-16 max-w-7xl mx-auto px-6 lg:px-10">
       <div className="flex justify-between items-center mb-6">
         <Link
           to={'/services'}
-          className="text-2xl sm:text-3xl font-bold text-primary-dark"
+          className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark"
         >
           Services
         </Link>
@@ -115,10 +115,10 @@ export const ServicesSection: React.FC = () => {
                 className="pt-10 pb-10"
               >
                 <div className="hover:shadow-lg transition bg-white rounded-2xl shadow p-6 min-h-[220px]">
-                  <h3 className="text-xl font-semibold mb-2">
+                  <h3 className="text-xl text-textBlack font-semibold mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600">{service.description}</p>
+                  <p className="text-textGray">{service.description}</p>
                   <Link
                     to="/services"
                     className="block mt-6 text-primary-dark hover:underline font-medium"

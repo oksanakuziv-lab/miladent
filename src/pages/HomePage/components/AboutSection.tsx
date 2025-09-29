@@ -3,12 +3,12 @@ import { ArrowIcon } from '../../../ui/icons/ArrowIcon';
 
 export const AboutSection = () => {
   return (
-    <section className="py-16 px-6 lg:px-12 bg-white">
-      <div className="mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <section className="bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2 relative">
-          <div className="rounded-3xl overflow-hidden">
+          <div className="rounded-3xl overflow-hidden aspect-[4/4]">
             <img
-              src="./AboutPhoto.jpg"
+              src="./mila-photo.jpg"
               alt="Miladent clinic founder in dental office"
               className="w-full h-full object-cover"
             />
@@ -25,15 +25,13 @@ export const AboutSection = () => {
         </div>
 
         <div className="lg:w-1/2 space-y-6">
-          <p className="text-primary-dark font-medium mb-4 cursor-default">
-            About Us
-          </p>
+          <p className="text-primary-dark mb-4 cursor-default">About Us</p>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-dark leading-tight cursor-default">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark leading-tight cursor-default">
             Patient-Centered Care
           </h2>
 
-          <p className="text-gray-600 leading-relaxed cursor-default">
+          <p className="text-textGray leading-relaxed cursor-default">
             Dr. Liudmyla Ryboichuk, dentist, specialist representative. Since
             2011, she has been providing patients with comprehensive dental
             care. A member of the Czech Dental Chamber. She is committed to
@@ -44,10 +42,10 @@ export const AboutSection = () => {
           </p>
 
           <div>
-            <h3 className="text-lg sm:text-xl font-bold text-primary-dark mb-6 cursor-default">
+            <h3 className="text-lg sm:text-xl font-medium text-primary-dark mb-6 cursor-default">
               Our Mission
             </h3>
-            <p className="text-gray-600 leading-relaxed cursor-default">
+            <p className="text-textGray leading-relaxed cursor-default">
               At Miladent, our mission is to promote optimal oral health and
               create lasting, confident smiles.
             </p>

@@ -8,9 +8,9 @@ export const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
       <WhyChooseUsSection />
+      <ServicesSection />
+      <AboutSection />
       <ContactsSection />
     </>
   );

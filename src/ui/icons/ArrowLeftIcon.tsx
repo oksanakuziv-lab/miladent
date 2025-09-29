@@ -9,17 +9,17 @@ export const ArrowLeftIcon = () => {
     >
       <path
         d="M2 11.9995L34 11.9995"
-        stroke="#141B34"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        stroke="#313131"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M11.9997 22C11.9997 22 1.99978 14.6351 1.99976 11.9999C1.99973 9.36474 11.9998 2.00001 11.9998 2.00001"
-        stroke="#141B34"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        stroke="#313131"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
