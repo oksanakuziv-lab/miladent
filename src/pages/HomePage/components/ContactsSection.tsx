@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { GmailIcon } from '../../../ui/icons/GmailIcon';
 import { InstagramIcon } from '../../../ui/icons/InstagramIcon';
 import { LocationIcon } from '../../../ui/icons/LocationIcon';
@@ -5,26 +6,26 @@ import { PhoneIcon } from '../../../ui/icons/PhoneIcon';
 
 const contacts = [
   {
-    type: 'Phone',
+    type: 'phone',
     value: '+420 777 412 097',
     href: 'tel:+420777412097',
     Icon: PhoneIcon,
   },
   {
-    type: 'Email',
+    type: 'email',
     value: 'miladentpraha@gmail.com',
     href: 'mailto:miladentpraha@gmail.com',
     Icon: GmailIcon,
   },
   {
-    type: 'Instagram',
+    type: 'instagram',
     value: 'miladentpraha',
     href: 'https://www.instagram.com/miladentpraha/',
     Icon: InstagramIcon,
     external: true,
   },
   {
-    type: 'Address',
+    type: 'address',
     value: 'Krškova 807/21, Praha',
     href: 'https://maps.app.goo.gl/6tABt7DLCUpSHtYC7',
     Icon: LocationIcon,
@@ -32,12 +33,13 @@ const contacts = [
 ];
 
 export const ContactsSection: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center gap-8">
         <div className="md:w-1/3 space-y-4">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark">
-            Get In Touch
+            {t('contactsSection.title')}
           </h2>
           {contacts.map(({ type, value, href, Icon, external }) => (
             <a
@@ -49,7 +51,9 @@ export const ContactsSection: React.FC = () => {
             >
               <div className="flex items-center gap-2">
                 <Icon />
-                <span className="text-primary-dark font-medium">{type}</span>
+                <span className="text-primary-dark font-medium">
+                  {t(`contactsSection.${type}`)}
+                </span>
               </div>
               <span className="text-textBlack font-sm ml-[26px]">{value}</span>
             </a>

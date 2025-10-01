@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,7 @@ export const ContactForm: React.FC = () => {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const { t } = useTranslation();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -40,7 +42,7 @@ export const ContactForm: React.FC = () => {
         type="text"
         value={formData.name}
         onChange={handleChange}
-        placeholder="Full Name"
+        placeholder={t('contactForm.name')}
         className="border rounded-sm border-primary bg-transparent p-2 outline-none"
         required
       />
@@ -49,13 +51,13 @@ export const ContactForm: React.FC = () => {
         type="tel"
         value={formData.phone}
         onChange={handleChange}
-        placeholder="Phone number"
+        placeholder={t('contactForm.phone')}
         className="border rounded-sm border-primary bg-transparent p-2 outline-none"
         required
       />
       <textarea
         name="message"
-        placeholder="message"
+        placeholder={t('contactForm.message')}
         value={formData.message}
         onChange={handleChange}
         className="border rounded-sm border-primary bg-transparent p-2 outline-none"
@@ -66,14 +68,10 @@ export const ContactForm: React.FC = () => {
         type="submit"
         className="w-full btn btn-outline"
       >
-        Send Message
+        {t('contactForm.submit')}
       </button>
 
-      {submitted && (
-        <p className="text-grey-900">
-          Thank you! Your message has been successfully sent.
-        </p>
-      )}
+      {submitted && <p className="text-grey-900">{t('contactForm.success')}</p>}
     </form>
   );
 };

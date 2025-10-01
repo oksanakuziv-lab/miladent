@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowIcon } from '../../../ui/icons/ArrowIcon';
+import { useTranslation } from 'react-i18next';
 
 export const AboutSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-12">
@@ -25,29 +27,24 @@ export const AboutSection = () => {
         </div>
 
         <div className="lg:w-1/2 space-y-6">
-          <p className="text-primary-dark mb-4 cursor-default">About Us</p>
+          <p className="text-primary-dark mb-4 cursor-default">
+            {t('aboutSection.title')}
+          </p>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark leading-tight cursor-default">
-            Patient-Centered Care
+            {t('aboutSection.subtitle')}
           </h2>
 
           <p className="text-textGray leading-relaxed cursor-default">
-            Dr. Liudmyla Ryboichuk, dentist, specialist representative. Since
-            2011, she has been providing patients with comprehensive dental
-            care. A member of the Czech Dental Chamber. She is committed to
-            continuous education both in the Czech Republic and abroad. She
-            delivers high-quality care with an emphasis on an individual
-            approach. Specialization: conservative dentistry, endodontics,
-            prosthetic and aesthetic dentistry.
+            {t('aboutSection.description')}
           </p>
 
           <div>
             <h3 className="text-lg sm:text-xl font-medium text-primary-dark mb-6 cursor-default">
-              Our Mission
+              {t('aboutSection.missionTitle')}
             </h3>
             <p className="text-textGray leading-relaxed cursor-default">
-              At Miladent, our mission is to promote optimal oral health and
-              create lasting, confident smiles.
+              {t('aboutSection.missionDescription')}
             </p>
           </div>
 
@@ -56,7 +53,7 @@ export const AboutSection = () => {
               to="/about"
               className="btn btn-secondary"
             >
-              Learn More
+              {t('aboutSection.button')}
               <ArrowIcon />
             </Link>
           </div>

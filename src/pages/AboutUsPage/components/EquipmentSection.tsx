@@ -1,17 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const images = ['/clinic-1.jpg', '/clinic-2.jpg', '/clinic-3.jpg'];
 
 export const EquipmentSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl uppercase text-textBlack mb-4">
-        Modern equipment for your comfort
+        {t('equipment.title')}
       </h2>
-      <p className="text-gray-600 mb-8">
-        Cutting-edge technology meets patient comfort. Modern equipment ensures
-        the highest standard of care.
-      </p>
+      <p className="text-gray-600 mb-8">{t('equipment.description')}</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {images.map((src, index) => (
           <img

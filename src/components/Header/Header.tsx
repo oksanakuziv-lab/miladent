@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { LanguageSwitcher } from '../LanguageSwitcher';
+import { ContactModal } from '../ContactModal';
 import {
   Dialog,
   DialogPanel,
@@ -8,20 +10,20 @@ import {
 } from '@headlessui/react';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { NavLink, useLocation } from 'react-router-dom';
-import { LanguageSwitcher } from '../LanguageSwitcher';
-import { ContactModal } from '../ContactModal';
 import { MenuIcon } from '../../ui/icons/MenuIcon';
 import { CancelIcon } from '../../ui/icons/CancelIcon';
-
-const navItems = [
-  { label: 'Home', url: '/' },
-  { label: 'About us', url: '/about' },
-  { label: 'Services', url: '/services' },
-  { label: 'Prices', url: '/prices' },
-];
+import { useTranslation } from 'react-i18next';
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const navItems = [
+    { label: t('nav.home'), url: '/' },
+    { label: t('nav.about'), url: '/about' },
+    { label: t('nav.services'), url: '/services' },
+    { label: t('nav.prices'), url: '/prices' },
+  ];
 
   const location = useLocation();
 
@@ -150,9 +152,9 @@ export const Header = () => {
                   </NavLink>
                 ))}
               </div>
-              <div className="py-6 flex flex-col gap-6 px-3">
-                <ContactModal />
+              <div className="py-6 flex flex-col gap-10">
                 <LanguageSwitcher />
+                <ContactModal />
               </div>
             </DialogPanel>
           </TransitionChild>

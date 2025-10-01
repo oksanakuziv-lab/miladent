@@ -5,65 +5,18 @@ import { ArrowLeftIcon } from '../../../ui/icons/ArrowLeftIcon';
 import { ArrowRightIcon } from '../../../ui/icons/ArrowRightIcon';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-
-const services = [
-  {
-    id: 1,
-    title: 'Initial Examination and Consultation',
-    description:
-      'Professional cleaning to remove plaque, tartar, and prevent gum disease.',
-  },
-  {
-    id: 2,
-    title: 'Dental Hygiene',
-    description:
-      'Professional cleaning to remove plaque, tartar, and prevent gum disease.',
-  },
-  {
-    id: 3,
-    title: 'Cavity Treatment',
-    description: 'Removal of tooth decay and filling to restore tooth health.',
-  },
-  {
-    id: 4,
-    title: 'Endodontics',
-    description:
-      'Treatment of infected tooth pulp to save and preserve the tooth.',
-  },
-  {
-    id: 5,
-    title: 'Prosthetic Dentistry',
-    description:
-      'Replacement of missing or damaged teeth with crowns, bridges, or dentures.',
-  },
-  {
-    id: 6,
-    title: 'Teeth Whitening',
-    description: 'Safe and effective whitening to brighten your smile.',
-  },
-  {
-    id: 7,
-    title: 'Tooth Extraction',
-    description: 'Gentle removal of damaged or problematic teeth.',
-  },
-  {
-    id: 8,
-    title: 'Implantology',
-    description:
-      'Surgical placement of dental implants for long-term tooth replacement.',
-  },
-  {
-    id: 9,
-    title: 'Botulinum Toxin Application',
-    description: 'Treatment of Bruxism and “Gummy Smile”',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export const ServicesSection: React.FC = () => {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
 
   const [swiperReady, setSwiperReady] = useState(false);
+
+  const { t } = useTranslation();
+  const services = t('servicesSection.services', {
+    returnObjects: true,
+  }) as Array<{ id: number; title: string; description: string }>;
 
   useEffect(() => {
     setSwiperReady(true);
@@ -76,7 +29,7 @@ export const ServicesSection: React.FC = () => {
           to={'/services'}
           className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark"
         >
-          Services
+          {t('servicesSection.title')}
         </Link>
         <div className="flex gap-6">
           <SliderButton
@@ -123,7 +76,7 @@ export const ServicesSection: React.FC = () => {
                     to="/services"
                     className="block mt-6 text-primary-dark hover:underline font-medium"
                   >
-                    Detail →
+                    {t('servicesSection.title')}
                   </Link>
                 </div>
               </SwiperSlide>

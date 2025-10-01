@@ -1,0 +1,224 @@
+{
+  "nav": {
+    "home": "Domů",
+    "about": "O nás",
+    "services": "Služby",
+    "prices": "Ceny"
+  },
+  "contactModal": {
+    "title": "Kontaktujte nás",
+    "description1": "Rezervujte si schůzku nyní",
+    "bookButton": "Rezervovat schůzku",
+    "description2": "Nebo vyplňte formulář a my se vám brzy ozveme."
+  },
+  "contactForm": {
+    "name": "Celé jméno",
+    "phone": "Telefonní číslo",
+    "message": "Zpráva",
+    "submit": "Odeslat zprávu",
+    "success": "Děkujeme! Vaše zpráva byla úspěšně odeslána."
+  },
+  "hero": {
+    "title": "Zdravé zuby, klid pro vás.",
+    "subtitle": "Komplexní stomatologická péče – od preventivních kontrol po složité zákroky",
+    "bookingButton": "Rezervovat schůzku",
+    "features": [
+      {
+        "title": "Přijímáme nové pacienty",
+        "desc": "Vstupní prohlídka pro pojištěnce zdarma"
+      },
+      {
+        "title": "Krátké čekací doby",
+        "desc": "Termín dostanete do 1 týdne"
+      },
+      {
+        "title": "Více než 10 let zkušeností",
+        "desc": "Více než 1000 spokojených pacientů"
+      },
+      {
+        "title": "Moderní vybavení",
+        "desc": "Díky moderní technologii jsou zákroky rychlejší a pohodlnější"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Proč si vybrat nás",
+    "features": [
+      {
+        "title": "Výborná dopravní dostupnost",
+        "description": "dostupnost MHD a PID, možnost parkování na parkovišti před budovou polikliniky, bezbariérový přístup"
+      },
+      {
+        "title": "Spolupracujeme s pojišťovnami",
+        "description": "VZP 111, OZP 207, ZPMV 211,  VoZP 201, ZPŠ 209."
+      },
+      {
+        "title": "Detailní vyšetřeni a maximální informovanost",
+        "description": "Poskytujeme pečlivou prohlídku a vysvětlujeme každý krok jasně."
+      },
+      {
+        "title": "Možnost rezervace online",
+        "description": "Jednoduchá online rezervace vám umožní naplánovat návštěvu během několika kliknutí."
+      },
+      {
+        "title": "Respektujeme vaše individuální potřeby",
+        "description": "Personalizovaný přístup s plnou pozorností k vašim jedinečným požadavkům."
+      }
+    ]
+  },
+  "servicesSection": {
+    "title": "Služby",
+    "detail": "Detail →",
+    "services": [
+      {
+        "id": 1,
+        "title": "Úvodní vyšetření a konzultace",
+        "description": "Profesionální čištění k odstranění plaku, kamene a prevenci onemocnění dásní."
+      },
+      {
+        "id": 2,
+        "title": "Dentální hygiena",
+        "description": "Profesionální čištění k odstranění plaku, kamene a prevenci onemocnění dásní."
+      },
+      {
+        "id": 3,
+        "title": "Ošetření kazu",
+        "description": "Odstranění zubního kazu a výplň pro obnovení zdraví zubu."
+      },
+      {
+        "id": 4,
+        "title": "Endodoncie",
+        "description": "Ošetření infikované zubní dřeně k záchraně a zachování zubu."
+      },
+      {
+        "id": 5,
+        "title": "Protetika",
+        "description": "Nahrazení chybějících nebo poškozených zubů korunkami, můstky nebo protézami."
+      },
+      {
+        "id": 6,
+        "title": "Bělení zubů",
+        "description": "Bezpečné a efektivní bělení pro zářivý úsměv."
+      },
+      {
+        "id": 7,
+        "title": "Extrahování zubu",
+        "description": "Jemné odstranění poškozených nebo problematických zubů."
+      },
+      {
+        "id": 8,
+        "title": "Implantologie",
+        "description": "Chirurgické umístění zubních implantátů pro dlouhodobou náhradu zubů."
+      },
+      {
+        "id": 9,
+        "title": "Aplikace botulotoxinu",
+        "description": "Léčba bruxismu a „Gummy Smile“"
+      }
+    ]
+  },
+  "aboutSection": {
+    "title": "O nás",
+    "subtitle": "Péče zaměřená na pacienta",
+    "description": "Dr. Liudmyla Ryboichuk, zubní lékařka, specialistka. Od roku 2011 poskytuje pacientům komplexní stomatologickou péči. Členka České stomatologické komory. Neustále se vzdělává jak v České republice, tak i v zahraničí. Poskytuje kvalitní péči s důrazem na individuální přístup. Specializace: konzervativní stomatologie, endodoncie, protetika a estetická stomatologie.",
+    "missionTitle": "Naše mise",
+    "missionDescription": "V Miladent je naší misí podporovat optimální zdraví dutiny ústní a vytvářet dlouhotrvající, sebevědomé úsměvy.",
+    "button": "Více informací"
+  },
+  "contactsSection": {
+    "title": "Kontaktujte nás",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "instagram": "Instagram",
+    "address": "Adresa"
+  },
+  "learnMoreSection": {
+    "title": "Zjistěte o nás více",
+    "subtitle": "Váš úsměv je pro nás důležitý",
+    "description1": "Jsme oddaný tým, který se zavázal poskytovat služby nejvyšší kvality. Náš přístup kombinuje odborné znalosti, inovace a péči, aby zajistil nejlepší výsledky pro naše klienty.",
+    "description2": "Naším cílem je vytvořit zkušenost, která je zároveň poutavá a efektivní, zajišťující, že každá interakce přináší hodnotu."
+  },
+  "customerFeedback": {
+    "title": "Co říkají naši klienti",
+    "readMore": "Číst více",
+    "showLess": "Zobrazit méně",
+    "viewOnGoogle": "Zobrazit na Google",
+    "seeOnZnamyLekar": "Zobrazit na ZnamyLekar",
+    "reviews": [
+      {
+        "name": "K.Š.",
+        "text": "Velmi zkušená dentální lékařka. Při čištění kořenových kanálků jsem nic necítil. Následná rekonstrukce zubu byla provedena tak dobře, že bych ani nepoznal, že byla opravena. V kanceláři hraje příjemná hudba.",
+        "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
+        "rating": 5,
+        "date": "03.03.2023",
+        "source": "znamylekar"
+      },
+      {
+        "name": "Olena Burak",
+        "text": "Mockrát děkuji! Celá naše rodina bude chodit jen k vám. Moje první návštěva byla naléhavá – byla jsem v 32. týdnu těhotenství. Hodně mi pomohli a všechno ošetřili. Ještě jednou moc děkuji!",
+        "link": "https://maps.app.goo.gl/YuJUypWDWzasypTe9",
+        "rating": 5,
+        "date": "05.09.2025",
+        "source": "google"
+      },
+      {
+        "name": "Daria Butorova",
+        "text": "Nejlepší stomatologie v Praze. Jsou velmi pečliví a zodpovědní. Mám velký strach ze zubařů 🙈, ale do Miladentu vždy chodím s radostí a bez obav. Velmi doporučuji!",
+        "link": "https://maps.app.goo.gl/QaG8Us1jP3KjiyWF6",
+        "rating": 5,
+        "date": "21.08.2025",
+        "source": "google"
+      },
+      {
+        "name": "Pašková",
+        "text": "Velké díky doktorce, je úžasná a milá, a podle dnešních standardů jsou ceny velmi rozumné!",
+        "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
+        "rating": 5,
+        "date": "22.02.2023",
+        "source": "znamylekar"
+      },
+      {
+        "name": "A.V.",
+        "text": "Hezká, nová ordinace s vynikající dopravní dostupností. Doktorka je velmi milá a čekací doba nebyla vůbec (měl/a jsem schůzku v 8:00, hned na začátku ordinačních hodin :).",
+        "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
+        "rating": 5,
+        "date": "05.01.2023",
+        "source": "znamylekar"
+      },
+      {
+        "name": "Oleksandra Kolchar",
+        "text": "Děkuji doktorce za opravu situace způsobené zubařem na Ukrajině. Můžu ji vřele doporučit a jsem velmi vděčná za její lidský přístup.",
+        "link": "https://maps.app.goo.gl/rHRiABzwgas6hV826",
+        "rating": 5,
+        "date": "13.09.2025",
+        "source": "google"
+      },
+      {
+        "name": "Alina Malash",
+        "text": "Děkujeme doktorce za vynikající péči. S manželem navštěvujeme kliniku několik let pro pravidelné čištění a ošetření zubů a vždy jsme byli velmi spokojeni. Přístup je profesionální, důkladný a zároveň lidský. Velmi oceňujeme pozornost, klid a ochotu vše vysvětlit. Doporučujeme všem!",
+        "link": "https://maps.app.goo.gl/rHRiABzwgas6hV826",
+        "rating": 5,
+        "date": "29.08.2025",
+        "source": "google"
+      }
+    ]
+  },
+  "doctor": {
+    "title": "Specialista",
+    "name": "Dr. Liudmyla Ryboichuk",
+    "about": [
+      "Zubní lékařka, odborný zástupce.",
+      "Od roku 2011 poskytuje pacientům komplexní stomatologickou péči.",
+      "Členka České stomatologické komory.",
+      "Pravidelně se vzdělává v České republice i v zahraničí.",
+      "Poskytuje vysoce kvalitní péči s důrazem na individuální přístup.",
+      "Specializace: konzervativní stomatologie, endodoncie, protetika a estetická stomatologie."
+    ],
+    "quote": "Rozumím každému z vás — zejména pokud jste měli v minulosti nepříjemné zkušenosti se zubním ošetřením nebo jste dosud nevěnovali velkou pozornost ústnímu zdraví. Každému pacientovi věnujeme čas, trpělivost a jemnou, bezbolestnou péči, vždy se zaměřujeme na vaše pohodlí. Jsme tu proto, abyste se nemuseli bát vrátit, ale naopak se vraceli s jistotou, že o svůj úsměv pečujete co nejlépe.",
+    "position": "Zakladatelka kliniky Miladent"
+  },
+  "equipment": {
+    "title": "Moderní vybavení pro vaše pohodlí",
+    "description": "Špičková technologie se setkává s pohodlím pacienta. Moderní vybavení zajišťuje nejvyšší standard péče."
+  }
+}

@@ -2,9 +2,11 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { useState } from 'react';
 import { ContactForm } from '../ContactForm';
 import { CancelIcon } from '../../ui/icons/CancelIcon';
+import { useTranslation } from 'react-i18next';
 
 export const ContactModal = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <Dialog.Root
@@ -12,17 +14,17 @@ export const ContactModal = () => {
       onOpenChange={setOpen}
     >
       <Dialog.Trigger asChild>
-        <button className="btn btn-primary">Contact Us</button>
+        <button className="btn btn-primary">{t('contactModal.title')}</button>
       </Dialog.Trigger>
 
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50 z-50" />
         <Dialog.Content className="fixed left-1/2 top-1/2 w-[90%] max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-[#f8f6f2] p-6 shadow-xl z-50">
           <Dialog.Title className="text-2xl font-serif mb-4 text-primary-dark">
-            Contact Us
+            {t('contactModal.title')}
           </Dialog.Title>
           <Dialog.Description className="mb-6 text-gray-600">
-            Book an appointment now
+            {t('contactModal.description1')}
           </Dialog.Description>
           <a
             href="https://miladentpraha.xdent.cz/wizard/clinic-selection?fbclid=PAZXh0bgNhZW0CMTEAAaccyLdfWS7vFzHzHLQhxAIDuxk2TWFe-iTOJvzIPy25x-AmHvlE0npvc-l7rg_aem_vT4YxIzcxir27yfpdxUNkg"
@@ -30,11 +32,11 @@ export const ContactModal = () => {
             rel="noopener noreferrer"
             className="w-full btn btn-primary"
           >
-            Book Appointment
+            {t('contactModal.bookButton')}
           </a>
 
           <Dialog.Description className="mb-6 mt-6 text-gray-600">
-            Or fill out the form and we’ll get back to you shortly.
+            {t('contactModal.description2')}
           </Dialog.Description>
 
           <ContactForm />

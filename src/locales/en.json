@@ -1,0 +1,224 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "prices": "Prices"
+  },
+  "contactModal": {
+    "title": "Contact Us",
+    "description1": "Book an appointment now",
+    "bookButton": "Book Appointment",
+    "description2": "Or fill out the form and we’ll get back to you shortly."
+  },
+  "contactForm": {
+    "name": "Full Name",
+    "phone": "Phone number",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you! Your message has been successfully sent."
+  },
+  "hero": {
+    "title": "Healthy teeth, peace of mind for you.",
+    "subtitle": "Comprehensive dental care – from preventive check-ups to complex procedures",
+    "bookingButton": "Book Appointment",
+    "features": [
+      {
+        "title": "We are accepting new patients",
+        "desc": "Initial examination free of charge for insured patients"
+      },
+      {
+        "title": "Short waiting times",
+        "desc": "You will get appointment within 1 week"
+      },
+      {
+        "title": "Over 10 years of experience",
+        "desc": "1,000+ satisfied patients"
+      },
+      {
+        "title": "Modern equipment",
+        "desc": "Thanks to advanced technology, procedures take less time and are more comfortable"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "features": [
+      {
+        "title": "Excellent transport accessibility",
+        "description": "Public transport and PID connections, parking available in front of the health centre building, wheelchair access."
+      },
+      {
+        "title": "We cooperate with health insurance companies",
+        "description": "VZP 111, OZP 207, ZPMV 211, VoZP 201, ZPŠ 209."
+      },
+      {
+        "title": "Detailed examination and maximum communication",
+        "description": "We provide a thorough check-up and explain every step clearly."
+      },
+      {
+        "title": "Possibility to book an appointment online",
+        "description": "Easy online booking lets you schedule your visit in just a few clicks."
+      },
+      {
+        "title": "We respect your individual needs",
+        "description": "Personalized approach with full attention to your unique requirements."
+      }
+    ]
+  },
+  "servicesSection": {
+    "title": "Services",
+    "detail": "Detail →",
+    "services": [
+      {
+        "id": 1,
+        "title": "Initial Examination and Consultation",
+        "description": "Professional cleaning to remove plaque, tartar, and prevent gum disease."
+      },
+      {
+        "id": 2,
+        "title": "Dental Hygiene",
+        "description": "Professional cleaning to remove plaque, tartar, and prevent gum disease."
+      },
+      {
+        "id": 3,
+        "title": "Cavity Treatment",
+        "description": "Removal of tooth decay and filling to restore tooth health."
+      },
+      {
+        "id": 4,
+        "title": "Endodontics",
+        "description": "Treatment of infected tooth pulp to save and preserve the tooth."
+      },
+      {
+        "id": 5,
+        "title": "Prosthetic Dentistry",
+        "description": "Replacement of missing or damaged teeth with crowns, bridges, or dentures."
+      },
+      {
+        "id": 6,
+        "title": "Teeth Whitening",
+        "description": "Safe and effective whitening to brighten your smile."
+      },
+      {
+        "id": 7,
+        "title": "Tooth Extraction",
+        "description": "Gentle removal of damaged or problematic teeth."
+      },
+      {
+        "id": 8,
+        "title": "Implantology",
+        "description": "Surgical placement of dental implants for long-term tooth replacement."
+      },
+      {
+        "id": 9,
+        "title": "Botulinum Toxin Application",
+        "description": "Treatment of Bruxism and “Gummy Smile”"
+      }
+    ]
+  },
+  "aboutSection": {
+    "title": "About Us",
+    "subtitle": "Patient-Centered Care",
+    "description": "Dr. Liudmyla Ryboichuk, dentist, specialist representative. Since 2011, she has been providing patients with comprehensive dental care. A member of the Czech Dental Chamber. She is committed to continuous education both in the Czech Republic and abroad. She delivers high-quality care with an emphasis on an individual approach. Specialization: conservative dentistry, endodontics, prosthetic and aesthetic dentistry.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "At Miladent, our mission is to promote optimal oral health and create lasting, confident smiles.",
+    "button": "Learn More"
+  },
+  "contactsSection": {
+    "title": "Get In Touch",
+    "phone": "Phone",
+    "email": "Email",
+    "instagram": "Instagram",
+    "address": "Address"
+  },
+  "learnMoreSection": {
+    "title": "Learn more about us",
+    "subtitle": "Your smile matters to us",
+    "description1": "We are a dedicated team committed to providing top-quality services. Our approach combines expertise, innovation, and care to ensure the best results for our clients.",
+    "description2": "Our mission is to create an experience that is both engaging and effective, making sure every interaction brings value."
+  },
+  "customerFeedback": {
+    "title": "What our clients are saying",
+    "readMore": "Read more",
+    "showLess": "Show less",
+    "viewOnGoogle": "View on Google",
+    "seeOnZnamyLekar": "See on ZnamyLekar",
+    "reviews": [
+      {
+        "name": "K.Š.",
+        "text": "A very skilled dentist. I didn’t feel anything during the root canal cleaning. The subsequent tooth restoration was done so well that I wouldn’t even notice it had been repaired. Pleasant music plays in the office.",
+        "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
+        "rating": 5,
+        "date": "03.03.2023",
+        "source": "znamylekar"
+      },
+      {
+        "name": "Olena Burak",
+        "text": "Thank you very much! Our whole family will continue to come only to you. My first visit was an emergency – I was 32 weeks pregnant. They helped me a lot and treated everything. Once again, thank you very much!",
+        "link": "https://maps.app.goo.gl/YuJUypWDWzasypTe9",
+        "rating": 5,
+        "date": "05.09.2025",
+        "source": "google"
+      },
+      {
+        "name": "Daria Butorova",
+        "text": "The best dentistry in Prague. They are very careful and responsible. I am very afraid of dentists 🙈, but I always go to Miladent with joy and without worry. I highly recommend them!",
+        "link": "https://maps.app.goo.gl/QaG8Us1jP3KjiyWF6",
+        "rating": 5,
+        "date": "21.08.2025",
+        "source": "google"
+      },
+      {
+        "name": "Pašková",
+        "text": "Many thanks to the doctor, she is wonderful and kind, and for today’s standards her prices are very reasonable!",
+        "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
+        "rating": 5,
+        "date": "22.02.2023",
+        "source": "znamylekar"
+      },
+      {
+        "name": "A.V.",
+        "text": "A nice, new office with excellent transport accessibility. The doctor is very kind, and there was no waiting time at all (I had an appointment at 8, right at the start of office hours :).",
+        "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
+        "rating": 5,
+        "date": "05.01.2023",
+        "source": "znamylekar"
+      },
+      {
+        "name": "Oleksandra Kolchar",
+        "text": "I thank the doctor for correcting the situation caused by a dentist in Ukraine. I can warmly recommend her and I am very grateful for her humane approach.",
+        "link": "https://maps.app.goo.gl/rHRiABzwgas6hV826",
+        "rating": 5,
+        "date": "13.09.2025",
+        "source": "google"
+      },
+      {
+        "name": "Alina Malash",
+        "text": "We thank the doctor for the excellent care. My husband and I have been visiting the clinic for several years for regular cleanings and dental treatments, and we have always been very satisfied. The approach is professional, thorough, and at the same time humane. We greatly appreciate the attention, calmness, and willingness to explain everything. We can only recommend them!",
+        "link": "https://maps.app.goo.gl/rHRiABzwgas6hV826",
+        "rating": 5,
+        "date": "29.08.2025",
+        "source": "google"
+      }
+    ]
+  },
+  "doctor": {
+    "title": "Specialist",
+    "name": "Dr. Liudmyla Ryboichuk",
+    "about": [
+      "Dentist, specialist representative.",
+      "Since 2011, she has been providing patients with comprehensive dental care.",
+      "A member of the Czech Dental Chamber.",
+      "She is committed to continuous education both in the Czech Republic and abroad.",
+      "She delivers high-quality care with an emphasis on an individual approach.",
+      "Specialization: conservative dentistry, endodontics, prosthetic and aesthetic dentistry."
+    ],
+    "quote": "I understand each of you — especially if you’ve had unpleasant experiences with dental treatment in the past or haven’t paid much attention to your oral health until now. We give every patient time, patience, and gentle, pain-free care, always focusing on your comfort. We are here so that you don’t have to be afraid to come back, but instead return with the confidence that you are taking the very best care of your smile.",
+    "position": "Founder of Miladent Clinic"
+  },
+  "equipment": {
+    "title": "Modern equipment for your comfort",
+    "description": "Cutting-edge technology meets patient comfort. Modern equipment ensures the highest standard of care."
+  }
+}

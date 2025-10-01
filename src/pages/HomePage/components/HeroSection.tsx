@@ -1,23 +1,11 @@
-const features = [
-  {
-    title: 'We are accepting new patients',
-    desc: 'Initial examination free of charge for insured patients',
-  },
-  {
-    title: 'Short waiting times',
-    desc: 'You will get appointment within 1 week',
-  },
-  {
-    title: 'Over 10 years of experience',
-    desc: '1,000+ satisfied patients',
-  },
-  {
-    title: 'Modern equipment',
-    desc: 'Thanks to advanced technology, procedures take less time and are more comfortable',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export const HeroSection: React.FC = () => {
+  const { t } = useTranslation();
+  const features = t('hero.features', { returnObjects: true }) as Array<{
+    title: string;
+    desc: string;
+  }>;
   return (
     <section className="relative bg-white pb-6">
       <div className="lg:hidden px-6 relative h-[630px] flex items-center">
@@ -31,19 +19,14 @@ export const HeroSection: React.FC = () => {
         </div>
 
         <div className="relative z-10 text-white space-y-6">
-          <h1 className="text-4xl font-bold leading-snug">
-            Healthy teeth, peace of mind for you.
-          </h1>
-          <h4 className="text-md">
-            Comprehensive dental care – from preventive check-ups to complex
-            procedures
-          </h4>
+          <h1 className="text-4xl font-bold leading-snug">{t('hero.title')}</h1>
+          <h4 className="text-md">{t('hero.subtitle')}</h4>
           <a
             target="_blank"
             href="https://miladentpraha.xdent.cz/wizard/clinic-selection?fbclid=PAZXh0bgNhZW0CMTEAAaccyLdfWS7vFzHzHLQhxAIDuxk2TWFe-iTOJvzIPy25x-AmHvlE0npvc-l7rg_aem_vT4YxIzcxir27yfpdxUNkg"
             className="btn btn-secondary"
           >
-            Booking Now →
+            {t('hero.bookingButton')}→
           </a>
         </div>
       </div>
@@ -51,18 +34,17 @@ export const HeroSection: React.FC = () => {
       <div className="hidden max-w-7xl mx-auto lg:px-10 lg:grid lg:grid-cols-2 gap-12 items-center relative z-10 py-6">
         <div className="space-y-8">
           <h1 className="text-5xl uppercase leading-snug cursor-default text-primary-dark">
-            Healthy teeth, peace of mind for you.
+            {t('hero.title')}
           </h1>
           <h4 className="text-2xl text-textBlack cursor-default">
-            Comprehensive dental care – from preventive check-ups to complex
-            procedures
+            {t('hero.subtitle')}
           </h4>
           <a
             target="_blank"
             href="https://miladentpraha.xdent.cz/wizard/clinic-selection?fbclid=PAZXh0bgNhZW0CMTEAAaccyLdfWS7vFzHzHLQhxAIDuxk2TWFe-iTOJvzIPy25x-AmHvlE0npvc-l7rg_aem_vT4YxIzcxir27yfpdxUNkg"
             className="btn btn-secondary"
           >
-            Book Appointment
+            {t('hero.bookingButton')}
           </a>
         </div>
         <img

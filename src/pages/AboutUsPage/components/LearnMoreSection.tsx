@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
+
 export const LearnMoreSection: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <h2 className="text-3xl lg:text-5xl text-primary-dark text-center mb-10 uppercase">
-          Learn more about us
+          {t('learnMoreSection.title')}
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-4 items-center">
@@ -17,16 +20,13 @@ export const LearnMoreSection: React.FC = () => {
 
           <div className="flex flex-col justify-between space-y-4 bg-primary-soft-light1 h-full rounded-lg p-8">
             <h3 className="text-4xl uppercase text-textBlack">
-              Your smile matters to us
+              {t('learnMoreSection.subtitle')}
             </h3>
             <p className="text-textGray">
-              We are a dedicated team committed to providing top-quality
-              services. Our approach combines expertise, innovation, and care to
-              ensure the best results for our clients.
+              {t('learnMoreSection.description1')}
             </p>
             <p className="text-textGray">
-              Our mission is to create an experience that is both engaging and
-              effective, making sure every interaction brings value.
+              {t('learnMoreSection.description2')}
             </p>
           </div>
         </div>

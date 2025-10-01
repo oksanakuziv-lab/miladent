@@ -5,86 +5,41 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { GoogleIcon } from '../../../ui/icons/GoogleIcon';
 import { useState } from 'react';
 import { Pattern } from '../../../ui/icons/Pattern';
-
-const reviews = [
-  {
-    name: 'K.Š.',
-    text: 'A very skilled dentist. I didn’t feel anything during the root canal cleaning. The subsequent tooth restoration was done so well that I wouldn’t even notice it had been repaired. Pleasant music plays in the office.',
-    link: 'https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews',
-    rating: 5,
-    date: '03.03.2023',
-    source: 'znamylekar',
-  },
-  {
-    name: 'Olena Burak',
-    text: 'Thank you very much! Our whole family will continue to come only to you. My first visit was an emergency – I was 32 weeks pregnant. They helped me a lot and treated everything. Once again, thank you very much!',
-    link: 'https://maps.app.goo.gl/YuJUypWDWzasypTe9',
-    rating: 5,
-    date: '05.09.2025',
-    source: 'google',
-  },
-  {
-    name: 'Daria Butorova',
-    text: 'The best dentistry in Prague. They are very careful and responsible. I am very afraid of dentists 🙈, but I always go to Miladent with joy and without worry. I highly recommend them!',
-    link: 'https://maps.app.goo.gl/QaG8Us1jP3KjiyWF6',
-    rating: 5,
-    date: '21.08.2025',
-    source: 'google',
-  },
-  {
-    name: 'Pašková',
-    text: 'Many thanks to the doctor, she is wonderful and kind, and for today’s standards her prices are very reasonable!',
-    link: 'https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews',
-    rating: 5,
-    date: '22.02.2023',
-    source: 'znamylekar',
-  },
-  {
-    name: 'A.V.',
-    text: 'A nice, new office with excellent transport accessibility. The doctor is very kind, and there was no waiting time at all (I had an appointment at 8, right at the start of office hours :)).',
-    link: 'https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews',
-    rating: 5,
-    date: '05.01.2023',
-    source: 'znamylekar',
-  },
-  {
-    name: 'Oleksandra Kolchar',
-    text: 'I thank the doctor for correcting the situation caused by a dentist in Ukraine. I can warmly recommend her and I am very grateful for her humane approach.',
-    link: 'https://maps.app.goo.gl/rHRiABzwgas6hV826',
-    rating: 5,
-    date: '13.09.2025',
-    source: 'google',
-  },
-  {
-    name: 'Alina Malash',
-    text: 'We thank the doctor for the excellent care. My husband and I have been visiting the clinic for several years for regular cleanings and dental treatments, and we have always been very satisfied. The approach is professional, thorough, and at the same time humane. We greatly appreciate the attention, calmness, and willingness to explain everything. We can only recommend them!',
-    link: 'https://maps.app.goo.gl/rHRiABzwgas6hV826',
-    rating: 5,
-    date: '29.08.2025',
-    source: 'google',
-  },
-];
-
-const sourceMap: Record<string, { label: string; logo: React.ReactNode }> = {
-  google: {
-    label: 'View on Google',
-    logo: <GoogleIcon />,
-  },
-  znamylekar: {
-    label: 'See on ZnamyLekar',
-    logo: (
-      <img
-        src="/znamylekar.png"
-        alt="ZnamyLekar"
-        className="w-5 h-5"
-      />
-    ),
-  },
-};
+import { useTranslation } from 'react-i18next';
 
 export const CustomerFeedback: React.FC = () => {
+  const { t } = useTranslation();
+  const reviews = t('customerFeedback.reviews', {
+    returnObjects: true,
+  }) as Array<{
+    id: number;
+    source: string;
+    text: string;
+    name: string;
+    date: number;
+    rating: number;
+    link: string;
+  }>;
+
   const [expanded, setExpanded] = useState(false);
   const maxLength = 100;
+
+  const sourceMap: Record<string, { label: string; logo: React.ReactNode }> = {
+    google: {
+      label: t('customerFeedback.viewOnGoogle'),
+      logo: <GoogleIcon />,
+    },
+    znamylekar: {
+      label: t('customerFeedback.seeOnZnamyLekar'),
+      logo: (
+        <img
+          src="/znamylekar.png"
+          alt="ZnamyLekar"
+          className="w-5 h-5"
+        />
+      ),
+    },
+  };
 
   return (
     <section className=" py-16 relative">
@@ -92,7 +47,7 @@ export const CustomerFeedback: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         <div className="flex flex-col justify-between h-full ">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl uppercase text-textBlack">
-            What our clients are saying
+            {t('customerFeedback.title')}
           </h2>
 
           <div className="flex gap-4 mt-8 lg:mt-0 lg:mb-10 self-end lg:self-start">
@@ -176,7 +131,9 @@ export const CustomerFeedback: React.FC = () => {
                           onClick={() => setExpanded(!expanded)}
                           className="text-secondary hover:underline text-sm pl-2"
                         >
-                          {expanded ? 'Show less' : 'Read more'}
+                          {expanded ?
+                            t('customerFeedback.showLess')
+                          : t('customerFeedback.readMore')}
                         </button>
                       )}
                     </p>
