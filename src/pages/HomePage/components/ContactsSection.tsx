@@ -3,7 +3,6 @@ import { GmailIcon } from '../../../ui/icons/GmailIcon';
 import { InstagramIcon } from '../../../ui/icons/InstagramIcon';
 import { LocationIcon } from '../../../ui/icons/LocationIcon';
 import { PhoneIcon } from '../../../ui/icons/PhoneIcon';
-import { MotionTitle } from '../../../components/MotionTitle';
 
 const contacts = [
   {
@@ -39,9 +38,13 @@ export const ContactsSection: React.FC = () => {
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center gap-8">
         <div className="md:w-1/3 space-y-4">
-          <MotionTitle className="text-3xl lg:text-4xl font-medium text-primary-dark">
+          <h2
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            className="text-3xl lg:text-4xl font-medium text-primary-dark"
+          >
             {t('contactsSection.title')}
-          </MotionTitle>
+          </h2>
           {contacts.map(({ type, value, href, Icon, external }) => (
             <a
               key={type}

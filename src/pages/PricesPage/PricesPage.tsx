@@ -4,8 +4,8 @@ import { PricesSection } from './components/PricesSection';
 export const PricesPage = () => {
   return (
     <>
-      <PricesSection />
       <PricesList />
+      <PricesSection />
     </>
   );
 };

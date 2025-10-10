@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { LazyImage } from '../../../components/LazyImage';
-import { MotionTitle } from '../../../components/MotionTitle';
 
 export const LearnMoreSection: React.FC = () => {
   const { t } = useTranslation();
@@ -9,7 +7,9 @@ export const LearnMoreSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-4 items-center">
           <div className="space-y-4">
-            <LazyImage
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
               src="/LearnMore.jpg"
               alt="About us 1"
               className="w-full h-full object-cover rounded-lg mx-auto"
@@ -17,9 +17,13 @@ export const LearnMoreSection: React.FC = () => {
           </div>
 
           <div className="flex flex-col justify-between space-y-4 bg-primary-soft-light1 h-full rounded-lg p-8">
-            <MotionTitle className="text-3xl lg:text-4xl font-medium text-primary-dark">
+            <h2
+              data-aos="flip-up"
+              data-aos-duration="1000"
+              className="text-3xl lg:text-4xl font-medium text-primary-dark"
+            >
               {t('learnMoreSection.title')}
-            </MotionTitle>
+            </h2>
             <h3 className="text-1xl uppercase text-textBlack">
               {t('learnMoreSection.subtitle')}
             </h3>

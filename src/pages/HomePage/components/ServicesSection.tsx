@@ -3,7 +3,6 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { MotionTitle } from '../../../components/MotionTitle';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 interface Services {
@@ -35,7 +34,12 @@ export const ServicesSection: React.FC = () => {
           to={'/services'}
           className="text-3xl lg:text-4xl font-medium text-primary-dark"
         >
-          <MotionTitle> {t('servicesSection.title')}</MotionTitle>
+          <h2
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            {t('servicesSection.title')}
+          </h2>
         </Link>
         <div className="flex gap-4 items-center">
           <button

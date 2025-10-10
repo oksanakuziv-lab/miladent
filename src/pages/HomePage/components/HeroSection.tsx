@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { LazyImage } from '../../../components/LazyImage';
-import { MotionTitle } from '../../../components/MotionTitle';
 
 export const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -12,7 +10,9 @@ export const HeroSection: React.FC = () => {
     <section className="relative bg-white pb-6">
       <div className="lg:hidden px-6 relative h-[630px] flex items-center">
         <div className="absolute inset-0">
-          <LazyImage
+          <img
+            data-aos="fade-up"
+            data-aos-duration="1000"
             src="/hero-banner.jpg"
             alt="Dentist consulting a patient"
             className="w-full h-full object-cover object-top"
@@ -21,9 +21,13 @@ export const HeroSection: React.FC = () => {
         </div>
 
         <div className="relative z-10 text-white flex flex-col justify-between h-full py-10">
-          <MotionTitle className="text-4xl uppercase leading-snug">
+          <h2
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            className="text-4xl uppercase leading-snug"
+          >
             {t('hero.title')}
-          </MotionTitle>
+          </h2>
           <div className="space-y-4 pb-4">
             <h4 className="text-md">{t('hero.subtitle')}</h4>
             <a
@@ -39,9 +43,13 @@ export const HeroSection: React.FC = () => {
 
       <div className="hidden max-w-7xl mx-auto lg:px-10 lg:grid lg:grid-cols-2 gap-12 items-center relative z-10 py-6">
         <div className="space-y-8">
-          <MotionTitle className="text-5xl uppercase leading-snug cursor-default text-primary-dark">
+          <h2
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            className="text-5xl uppercase leading-snug cursor-default text-primary-dark"
+          >
             {t('hero.title')}
-          </MotionTitle>
+          </h2>
           <h4 className="text-2xl text-textBlack cursor-default">
             {t('hero.subtitle')}
           </h4>
@@ -53,7 +61,9 @@ export const HeroSection: React.FC = () => {
             {t('hero.bookingButton')} →
           </a>
         </div>
-        <LazyImage
+        <img
+          data-aos="fade-up"
+          data-aos-duration="1000"
           src="/hero-banner.jpg"
           alt="Dentist consulting a patient"
           className="w-full h-[500px] object-cover object-center rounded-2xl"

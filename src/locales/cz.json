@@ -235,7 +235,7 @@
       {
         "id": 1,
         "name": "Vstupní vyšetření a konzultace",
-        "title": "Poradíme vám osobně a individuálně",
+        "title": "První konzultace",
         "description": [
           {
             "subtitle": "Rozumíme tomu, že na výběru zubního lékaře si člověk dává patřičně záležet.",
@@ -337,7 +337,7 @@
             "text": "(gumová blána, obepínající ošetřovaný zub, která brání kontaminaci zubu slinou, či krví, zabraňuje vtékání tekutin do krku pacienta při zubních ošetřeních)"
           }
         ],
-        "images": ["/service7.jpg", "/service8.jpg"]
+        "images": ["/service7.jpg", "/service12.jpg"]
       },
       {
         "id": 5,
@@ -359,7 +359,7 @@
             "text": "Moderní technologie pro rychlé a přesné snímání vašich zubů a ústní dutiny bez nepohodlných otiskovacích hmot. Intraorální skener vytváří digitální 3D model, který nám umožňuje přesně plánovat ošetření, výrobu korunek, fazet nebo rovnátek. Vyšetření je pohodlné, rychlé a bezbolestné, s okamžitou vizualizací výsledku."
           }
         ],
-        "images": ["/service9.jpg", "/service10.jpg"]
+        "images": ["/service9.jpg", "/service8.jpg"]
       },
       {
         "id": 6,
@@ -371,7 +371,7 @@
             "text": "Na základě otisků/skenu vašich zubů vyrobíme perfektně těsné nosiče. Do nosičů se aplikuje speciální gel. Nosiče s bělícím gelem se nechávají v ústech několik hodin, nejlepší dobou je noc, kdy člověk méně sliní. Proces nočního bělení se pak opakuje po dobu 5-14 dnů podle doporučení zubního lékaře nebo dentální hygienistky."
           }
         ],
-        "images": ["/service11.jpg", "/service12.jpg"]
+        "images": ["/service11.jpg", "/service10.jpg"]
       },
       {
         "id": 7,

@@ -3,6 +3,8 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { FloatingWhatsApp } from '../../components/FloatingWhatsApp';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const AppLayout = () => {
   const { pathname } = useLocation();
@@ -13,6 +15,10 @@ export const AppLayout = () => {
       behavior: 'smooth',
     });
   }, [pathname]);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
   return (
     <div>

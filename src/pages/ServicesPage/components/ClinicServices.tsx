@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { LazyImage } from '../../../components/LazyImage';
-import { MotionTitle } from '../../../components/MotionTitle';
 import { useTranslation } from 'react-i18next';
 
 interface ServiceDescription {
@@ -59,9 +57,14 @@ export const ClinicServices: React.FC = () => {
 
   return (
     <section className="bg-white py-10 max-w-7xl mx-auto px-6 lg:px-10">
-      <MotionTitle className="text-3xl lg:text-4xl font-medium text-primary-dark mb-10">
+      <h2
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        className="text-3xl lg:text-4xl font-medium text-primary-dark mb-10 flex items-center gap-4"
+      >
         {t('services.title')}
-      </MotionTitle>
+        <span className="flex-1 h-[1px] bg-primary" />
+      </h2>
       <div className=" flex flex-col md:flex-row gap-18">
         <div className="w-full md:w-1/4 flex flex-col justify-between md:sticky md:top-30 md:h-fit">
           <div className="space-y-4">
@@ -89,8 +92,13 @@ export const ClinicServices: React.FC = () => {
               ref={(el) => {
                 sectionsRef.current[service.id] = el;
               }}
+              className="scroll-mt-28"
             >
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary-dark ">
+              <h2
+                data-aos="flip-up"
+                data-aos-duration="1000"
+                className="text-3xl md:text-4xl font-semibold mb-6 text-primary-dark "
+              >
                 {service.title}
               </h2>
 
@@ -102,7 +110,9 @@ export const ClinicServices: React.FC = () => {
                 }`}
               >
                 {service.images.map((src, i) => (
-                  <LazyImage
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
                     key={i}
                     src={src}
                     alt={service.name}

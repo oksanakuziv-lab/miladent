@@ -5,7 +5,6 @@ import { GoogleIcon } from '../../../ui/icons/GoogleIcon';
 import { useState } from 'react';
 import { Pattern } from '../../../ui/icons/Pattern';
 import { useTranslation } from 'react-i18next';
-import { MotionTitle } from '../../../components/MotionTitle';
 
 export const CustomerFeedback: React.FC = () => {
   const { t } = useTranslation();
@@ -46,9 +45,13 @@ export const CustomerFeedback: React.FC = () => {
       <Pattern className="absolute inset-0 w-full h-full opacity-20 -z-1" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         <div className="flex flex-col justify-between h-full ">
-          <MotionTitle className="text-3xl lg:text-4xl font-medium text-primary-dark">
+          <h2
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            className="text-3xl lg:text-4xl font-medium text-primary-dark"
+          >
             {t('customerFeedback.title')}
-          </MotionTitle>
+          </h2>
 
           <div className="flex gap-4 mt-8 lg:mt-0 lg:mb-10 self-end lg:self-start">
             <button className="review-prev w-12 h-12 flex items-center justify-center rounded-full bg-primary-dark text-white hover:bg-primary transition">

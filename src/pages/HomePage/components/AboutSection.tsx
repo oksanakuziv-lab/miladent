@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom';
 import { ArrowIcon } from '../../../ui/icons/ArrowIcon';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { LazyImage } from '../../../components/LazyImage';
-import { MotionTitle } from '../../../components/MotionTitle';
 
 export const AboutSection = () => {
   const { t } = useTranslation();
@@ -13,7 +11,9 @@ export const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2 relative">
           <div className="overflow-hidden aspect-[4/4]">
-            <LazyImage
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
               src="./mila-photo.jpg"
               alt="Miladent clinic founder in dental office"
               className="w-full h-full object-cover rounded-3xl"
@@ -35,9 +35,13 @@ export const AboutSection = () => {
             {t('aboutSection.title')}
           </p>
 
-          <MotionTitle className="text-3xl lg:text-4xl font-medium text-primary-dark leading-tight cursor-default">
+          <h2
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            className="text-3xl lg:text-4xl font-medium text-primary-dark leading-tight cursor-default"
+          >
             {t('aboutSection.subtitle')}
-          </MotionTitle>
+          </h2>
 
           <p className="text-textBlack mb-4">{t('doctor.name')}</p>
 

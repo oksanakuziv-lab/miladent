@@ -12,11 +12,19 @@ export const PricesList: React.FC = () => {
   }) as Service[];
 
   return (
-    <section className="w-full max-w-3xl mx-auto p-4 px-6 lg:px-10">
+    <section className="bg-white py-10 max-w-7xl mx-auto px-6 lg:px-10">
+      <h2
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        className="text-3xl lg:text-4xl font-medium text-primary-dark mb-10 flex items-center gap-4"
+      >
+        {t('pricesSection.title')}
+        <span className="flex-1 h-[1px] bg-primary" />
+      </h2>
       {services.map((service, index) => (
         <div
           key={index}
-          className="border-b border-b-primary w-full flex justify-between items-center py-4 text-left text-lg"
+          className="max-w-3xl mx-auto p-4 border-b border-b-primary w-full flex justify-between items-center py-4 text-left text-lg"
         >
           <span className="text-textBlack">{service.category}</span>
           <span className="text-textGray">{service.price}</span>
