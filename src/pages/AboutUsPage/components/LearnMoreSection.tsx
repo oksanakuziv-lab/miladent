@@ -12,7 +12,7 @@ export const LearnMoreSection: React.FC = () => {
             <LazyImage
               src="/LearnMore.jpg"
               alt="About us 1"
-              className="w-full h-[490] object-contain rounded-lg mx-auto"
+              className="w-full h-full object-cover rounded-lg mx-auto"
             />
           </div>
 
