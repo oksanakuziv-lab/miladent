@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AppLayout } from './pages/AppLayout/AppLayout';
 import { HomePage } from './pages/HomePage';
 import { AboutUsPage } from './pages/AboutUsPage';
@@ -7,7 +7,7 @@ import { PricesPage } from './pages/PricesPage';
 
 export const Root: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
           <Route
@@ -28,6 +28,6 @@ export const Root: React.FC = () => {
           />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };

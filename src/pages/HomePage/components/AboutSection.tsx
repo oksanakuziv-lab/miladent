@@ -1,18 +1,22 @@
 import { Link } from 'react-router-dom';
 import { ArrowIcon } from '../../../ui/icons/ArrowIcon';
 import { useTranslation } from 'react-i18next';
+import { LazyImage } from '../../../components/LazyImage';
+import { MotionTitle } from '../../../components/MotionTitle';
 
 export const AboutSection = () => {
   const { t } = useTranslation();
+  const aboutDoctor = t('doctor.about', { returnObjects: true }) as string[];
+
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2 relative">
-          <div className="rounded-3xl overflow-hidden aspect-[4/4]">
-            <img
+          <div className="overflow-hidden aspect-[4/4]">
+            <LazyImage
               src="./mila-photo.jpg"
               alt="Miladent clinic founder in dental office"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-3xl"
             />
           </div>
 
@@ -31,13 +35,17 @@ export const AboutSection = () => {
             {t('aboutSection.title')}
           </p>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark leading-tight cursor-default">
+          <MotionTitle className="text-3xl lg:text-4xl font-medium text-primary-dark leading-tight cursor-default">
             {t('aboutSection.subtitle')}
-          </h2>
+          </MotionTitle>
 
-          <p className="text-textGray leading-relaxed cursor-default">
-            {t('aboutSection.description')}
-          </p>
+          <p className="text-textBlack mb-4">{t('doctor.name')}</p>
+
+          <ul className="list-disc pl-5 text-textGray space-y-2">
+            {aboutDoctor.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
 
           <div>
             <h3 className="text-lg sm:text-xl font-medium text-primary-dark mb-6 cursor-default">

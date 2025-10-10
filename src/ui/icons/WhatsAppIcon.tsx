@@ -40,7 +40,7 @@ export const WhatsAppIcon = () => {
           y2="-0.0013995"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#20B038" />
+          <stop stopColor="#20B038" />
           <stop
             offset="1"
             stopColor="#60D66A"
@@ -54,7 +54,7 @@ export const WhatsAppIcon = () => {
           y2="7.79252"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#20B038" />
+          <stop stopColor="#20B038" />
           <stop
             offset="1"
             stopColor="#60D66A"
@@ -68,7 +68,7 @@ export const WhatsAppIcon = () => {
           y2="7.37241"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9F9F9" />
+          <stop stopColor="#F9F9F9" />
           <stop
             offset="1"
             stopColor="white"

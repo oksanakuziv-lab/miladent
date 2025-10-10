@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { MotionTitle } from '../../../components/MotionTitle';
+import { LazyImage } from '../../../components/LazyImage';
 
 export const ClinicOverviewSection: React.FC = () => {
   const { t } = useTranslation();
@@ -12,9 +14,9 @@ export const ClinicOverviewSection: React.FC = () => {
             <h3 className="text-sm uppercase text-textGray mb-2">
               {t('doctor.title')}
             </h3>
-            <h2 className="text-2xl lg:text-4xl text-textBlack mb-4">
+            <MotionTitle className="text-3xl lg:text-4xl text-textBlack mb-4">
               {t('doctor.name')}
-            </h2>
+            </MotionTitle>
             <ul className="list-disc pl-5 text-textGray space-y-2">
               {aboutDoctor.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -23,7 +25,7 @@ export const ClinicOverviewSection: React.FC = () => {
           </div>
 
           <div className="lg:col-span-2">
-            <img
+            <LazyImage
               src="/mila-photo.jpg"
               alt="Mila Photo"
               className="w-full h-full lg:h-[450px] object-cover object-center rounded-lg"

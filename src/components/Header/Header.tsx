@@ -44,7 +44,7 @@ export const Header = () => {
           >
             <img
               alt="Miladent logo"
-              src="logo.png"
+              src="/logo.png"
               className="h-16 w-auto lg:mr-16"
             />
           </NavLink>
@@ -122,7 +122,7 @@ export const Header = () => {
                 >
                   <img
                     alt="Miladent logo"
-                    src="logo.png"
+                    src="/logo.png"
                     className="h-16 w-auto"
                   />
                 </NavLink>

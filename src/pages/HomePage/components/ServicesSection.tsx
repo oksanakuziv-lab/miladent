@@ -1,22 +1,28 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { SliderButton } from '../../../ui/Components/SliderButton';
-import { ArrowLeftIcon } from '../../../ui/icons/ArrowLeftIcon';
-import { ArrowRightIcon } from '../../../ui/icons/ArrowRightIcon';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { MotionTitle } from '../../../components/MotionTitle';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+
+interface Services {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+}
 
 export const ServicesSection: React.FC = () => {
+  const [swiperReady, setSwiperReady] = useState(false);
+
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
-
-  const [swiperReady, setSwiperReady] = useState(false);
 
   const { t } = useTranslation();
   const services = t('servicesSection.services', {
     returnObjects: true,
-  }) as Array<{ id: number; title: string; description: string }>;
+  }) as Services[];
 
   useEffect(() => {
     setSwiperReady(true);
@@ -27,19 +33,23 @@ export const ServicesSection: React.FC = () => {
       <div className="flex justify-between items-center mb-6">
         <Link
           to={'/services'}
-          className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-dark"
+          className="text-3xl lg:text-4xl font-medium text-primary-dark"
         >
-          {t('servicesSection.title')}
+          <MotionTitle> {t('servicesSection.title')}</MotionTitle>
         </Link>
-        <div className="flex gap-6">
-          <SliderButton
-            icon={<ArrowLeftIcon />}
+        <div className="flex gap-4 items-center">
+          <button
             ref={prevRef}
-          />
-          <SliderButton
-            icon={<ArrowRightIcon />}
+            className="review-prev w-10 h-10 flex items-center justify-center rounded-full bg-primary-dark text-white hover:bg-primary transition"
+          >
+            <ArrowLeft size={20} />
+          </button>
+          <button
             ref={nextRef}
-          />
+            className="review-next w-10 h-10 flex items-center justify-center rounded-full bg-primary-dark text-white hover:bg-primary transition"
+          >
+            <ArrowRight size={20} />
+          </button>
         </div>
       </div>
 
@@ -67,18 +77,27 @@ export const ServicesSection: React.FC = () => {
                 key={service.id}
                 className="pt-10 pb-10"
               >
-                <div className="hover:shadow-lg transition bg-white rounded-2xl shadow p-6 min-h-[220px]">
-                  <h3 className="text-xl text-textBlack font-semibold mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-textGray">{service.description}</p>
-                  <Link
-                    to="/services"
-                    className="block mt-6 text-primary-dark hover:underline font-medium"
-                  >
-                    {t('servicesSection.title')}
-                  </Link>
-                </div>
+                <Link
+                  to="/services"
+                  className="block relative rounded-2xl overflow-hidden shadow-lg min-h-[220px] group"
+                >
+                  <img
+                    src={service.imageUrl}
+                    alt={service.title}
+                    className="absolute inset-0 w-full h-full object-cover object-top z-0"
+                  />
+                  <div className="absolute inset-0 bg-black/40 transition group-hover:bg-black/30" />
+
+                  <div className="relative z-20 p-6 flex flex-col justify-between h-full text-white">
+                    <h3 className="text-xl font-semibold mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm">{service.description}</p>
+                    <span className="mt-4 underline font-medium">
+                      {t('servicesSection.detail')}
+                    </span>
+                  </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

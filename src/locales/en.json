@@ -19,7 +19,7 @@
     "success": "Thank you! Your message has been successfully sent."
   },
   "hero": {
-    "title": "Healthy teeth, peace of mind for you.",
+    "title": "Healthy teeth, peace of mind for you",
     "subtitle": "Comprehensive dental care – from preventive check-ups to complex procedures",
     "bookingButton": "Book Appointment",
     "features": [
@@ -68,59 +68,70 @@
   },
   "servicesSection": {
     "title": "Services",
-    "detail": "Detail →",
+    "detail": "Detail",
     "services": [
       {
         "id": 1,
         "title": "Initial Examination and Consultation",
-        "description": "Professional cleaning to remove plaque, tartar, and prevent gum disease."
+        "description": "Professional cleaning to remove plaque, tartar, and prevent gum disease.",
+        "imageUrl": "/service1.jpg"
       },
       {
         "id": 2,
         "title": "Dental Hygiene",
-        "description": "Professional cleaning to remove plaque, tartar, and prevent gum disease."
+        "description": "Professional cleaning to remove plaque, tartar, and prevent gum disease.",
+        "imageUrl": "/service3.jpg"
       },
       {
         "id": 3,
         "title": "Cavity Treatment",
-        "description": "Removal of tooth decay and filling to restore tooth health."
+        "description": "Removal of tooth decay and filling to restore tooth health.",
+        "imageUrl": "/service5.jpg"
       },
       {
         "id": 4,
         "title": "Endodontics",
-        "description": "Treatment of infected tooth pulp to save and preserve the tooth."
+        "description": "Treatment of infected tooth pulp to save and preserve the tooth.",
+        "imageUrl": "/service8.jpg"
       },
       {
         "id": 5,
         "title": "Prosthetic Dentistry",
-        "description": "Replacement of missing or damaged teeth with crowns, bridges, or dentures."
+        "description": "Replacement of missing or damaged teeth with crowns, bridges, or dentures.",
+        "imageUrl": "/service9.jpg"
       },
       {
         "id": 6,
         "title": "Teeth Whitening",
-        "description": "Safe and effective whitening to brighten your smile."
+        "description": "Safe and effective whitening to brighten your smile.",
+        "imageUrl": "/service12.jpg"
       },
       {
         "id": 7,
-        "title": "Tooth Extraction",
-        "description": "Gentle removal of damaged or problematic teeth."
+        "title": "Tooth Extraction and Implantology",
+        "description": "Gentle removal of damaged or problematic teeth.",
+        "imageUrl": "/service14.jpg"
       },
       {
         "id": 8,
-        "title": "Implantology",
-        "description": "Surgical placement of dental implants for long-term tooth replacement."
-      },
-      {
-        "id": 9,
         "title": "Botulinum Toxin Application",
-        "description": "Treatment of Bruxism and “Gummy Smile”"
+        "description": "Treatment of Bruxism and “Gummy Smile”",
+        "imageUrl": "/service15.jpg"
       }
     ]
   },
   "aboutSection": {
     "title": "About Us",
     "subtitle": "Patient-Centered Care",
-    "description": "Dr. Liudmyla Ryboichuk, dentist, specialist representative. Since 2011, she has been providing patients with comprehensive dental care. A member of the Czech Dental Chamber. She is committed to continuous education both in the Czech Republic and abroad. She delivers high-quality care with an emphasis on an individual approach. Specialization: conservative dentistry, endodontics, prosthetic and aesthetic dentistry.",
+    "name": "Dr. Liudmyla Ryboichuk",
+    "about": [
+      "Dentist, specialist representative.",
+      "Since 2011, she has been providing patients with comprehensive dental care.",
+      "A member of the Czech Dental Chamber.",
+      "She is committed to continuous education both in the Czech Republic and abroad.",
+      "She delivers high-quality care with an emphasis on an individual approach.",
+      "Specialization: conservative dentistry, endodontics, prosthetic and aesthetic dentistry."
+    ],
     "missionTitle": "Our Mission",
     "missionDescription": "At Miladent, our mission is to promote optimal oral health and create lasting, confident smiles.",
     "button": "Learn More"
@@ -220,5 +231,206 @@
   "equipment": {
     "title": "Modern equipment for your comfort",
     "description": "Cutting-edge technology meets patient comfort. Modern equipment ensures the highest standard of care."
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "id": 1,
+        "name": "Initial examination and consultation",
+        "title": "We provide personal and individual advice",
+        "description": [
+          {
+            "subtitle": "We understand that choosing a dentist is an important decision.",
+            "text": "That’s why clients with contractual insurance can have a FREE initial check-up to decide whether our approach and care suit them. The usual duration is 30 minutes. The initial examination is non-binding for both parties."
+          },
+          {
+            "subtitle": "How does the first visit look like?",
+            "list": [
+              "You fill out a simple questionnaire",
+              "We perform an examination of teeth and gums",
+              "We take X-ray images",
+              "We prepare a treatment plan with an estimated price and procedure"
+            ]
+          }
+        ],
+        "images": ["/service1.jpg", "/service2.jpg"]
+      },
+      {
+        "id": 2,
+        "name": "Dental hygiene",
+        "title": "Professional dental hygiene for healthy gums",
+        "description": [
+          {
+            "subtitle": "What does dental hygiene include?",
+            "list": [
+              "removal of tartar and plaque",
+              "air polishing (AirFlow) for smooth and clean teeth",
+              "fluoride treatment to strengthen enamel",
+              "individual instruction for proper home care"
+            ]
+          },
+          {
+            "subtitle": "",
+            "text": "Regular dental hygiene is the foundation of healthy teeth and gums. It helps prevent tooth decay, gum inflammation, and periodontitis."
+          }
+        ],
+        "images": ["/service3.jpg", "/service4.jpg"]
+      },
+      {
+        "id": 3,
+        "name": "Cavity treatment",
+        "title": "Modern and painless cavity treatment",
+        "description": [
+          {
+            "subtitle": "If you experience the following symptoms, you should book an appointment:",
+            "list": [
+              "sensitivity to hot or cold drinks",
+              "mild pain when biting",
+              "dark spot or a “hole” in the tooth",
+              "small cracks or chips"
+            ],
+            "text": "During the check-up, the doctor can detect early signs of decay. If it’s a cavity, the solution is a tooth filling."
+          },
+          {
+            "subtitle": "Replacing amalgam fillings with white composite ones",
+            "text": "We offer gentle and aesthetic replacement of old amalgam fillings with modern white composite fillings."
+          },
+          {
+            "subtitle": "Advantages of white composite fillings:",
+            "list": [
+              "natural appearance – blends with the tooth color",
+              "strength and durability",
+              "less invasive treatment requiring minimal drilling"
+            ]
+          },
+          {
+            "subtitle": "Disadvantages of amalgam fillings:",
+            "list": [
+              "may weaken the tooth due to expansion",
+              "contain mercury, which is now restricted",
+              "can cause discoloration of surrounding tooth tissue over time"
+            ],
+            "text": "If you want healthy teeth, contact us — we’ll recommend the best treatment method suited for you."
+          }
+        ],
+        "images": ["/service5.jpg"]
+      },
+      {
+        "id": 4,
+        "name": "Endodontics",
+        "title": "Root canal treatment",
+        "description": [
+          {
+            "subtitle": "If you suffer from:",
+            "list": [
+              "severe tooth pain",
+              "intense pain accompanied by gum swelling or headache",
+              "pain when biting",
+              "inflammation in the root area"
+            ],
+            "text": "You probably need a root canal treatment (endodontics)."
+          },
+          {
+            "subtitle": "",
+            "text": "Thanks to modern procedures and equipment, we clean and disinfect the root canals and then fill them hermetically with a special material. After that, the tooth is restored."
+          },
+          {
+            "subtitle": "ALL PROCEDURES ARE PERFORMED USING A RUBBER DAM",
+            "text": "(a rubber sheet surrounding the treated tooth, preventing contamination with saliva or blood, and keeping fluids from entering the throat during dental treatment)"
+          }
+        ],
+        "images": ["/service7.jpg", "/service8.jpg"]
+      },
+      {
+        "id": 5,
+        "name": "Prosthetic dentistry",
+        "title": "Tooth replacements with natural look and function",
+        "description": [
+          {
+            "text": "Prosthetics help replace missing or severely damaged teeth. Using modern methods and materials, we restore both function and natural aesthetics.",
+            "subtitle": "What does prosthetics include?",
+            "list": [
+              "crowns and bridges",
+              "veneers for aesthetic adjustments",
+              "partial and full removable dentures",
+              "modern fixed replacements on implants"
+            ]
+          },
+          {
+            "subtitle": "Intraoral scanner",
+            "text": "A modern technology for fast and accurate scanning of your teeth and mouth without uncomfortable impression materials. The intraoral scanner creates a digital 3D model, allowing precise planning of treatments, crowns, veneers, or aligners. The procedure is comfortable, quick, and painless, with an instant visual result."
+          }
+        ],
+        "images": ["/service9.jpg", "/service10.jpg"]
+      },
+      {
+        "id": 6,
+        "name": "Teeth whitening",
+        "title": "Safe whitening for a radiant smile",
+        "description": [
+          {
+            "subtitle": "We offer at-home teeth whitening at our clinic.",
+            "text": "Based on your dental impressions/scans, we create perfectly fitting trays. A special gel is applied to the trays, which are worn for several hours — preferably overnight when salivation is lower. The whitening process is repeated for 5–14 days according to the dentist’s or hygienist’s recommendation."
+          }
+        ],
+        "images": ["/service11.jpg", "/service12.jpg"]
+      },
+      {
+        "id": 7,
+        "name": "Tooth extraction and implantology",
+        "title": "Modern implantology and painless extractions",
+        "description": [
+          {
+            "subtitle": "Implant placement is a relatively simple surgical procedure you don’t need to worry about.",
+            "text": "We start with a detailed analysis of your oral condition. Our dental implantologist carefully places the implant into your jawbone. The procedure is done under local anesthesia on a standard dental chair and takes about 30 minutes. After the procedure, you can go home normally. Healing takes 3–6 months, during which a strong bond forms between the bone and implant. The second phase is the placement of a crown on the implant."
+          }
+        ],
+        "images": ["/service13.jpg", "/service14.jpg"]
+      },
+      {
+        "id": 8,
+        "name": "Botulinum toxin application",
+        "title": "Treatment of bruxism and “gummy smile”",
+        "description": [
+          {
+            "subtitle": "",
+            "text": "We help reduce excessive jaw clenching (bruxism) and correct the condition where too much gum shows when smiling (“gummy smile”) through safe application of botulinum toxin. The procedure is quick, precise, and gentle, with natural-looking results that improve comfort and smile aesthetics. Combined with a night guard, excellent results in treating bruxism can be achieved."
+          }
+        ],
+        "images": ["/service15.jpg", "/service16.jpg"]
+      }
+    ]
+  },
+  "pricesSection": {
+    "title": "Our Prices",
+    "description": [
+      "This price list is for reference only — an exact treatment estimate will be provided at the clinic",
+      "You can pay by mobile (bank transfer) or in cash",
+      "We cooperate with health insurance companies: VZP 111, ZPMV 211, OZP 207, ČPZP 205, ZPŠ 209",
+      "We accept child patients only if their parents are registered with us"
+    ]
+  },
+  "pricesList": {
+    "list": [
+      {
+        "category": "Initial examination + treatment plan",
+        "price": "Covered by health insurance"
+      },
+      { "category": "Composite filling", "price": "from 2,900 CZK" },
+      { "category": "Endodontic treatment", "price": "from 4,500 CZK" },
+      { "category": "All-ceramic crown", "price": "11,500 CZK" },
+      { "category": "Dental hygiene", "price": "2,000 CZK" },
+      {
+        "category": "Dental hygiene (recall after 6 months)",
+        "price": "1,600 CZK"
+      },
+      { "category": "Home whitening", "price": "4,500 CZK" },
+      { "category": "Implant placement", "price": "from 17,000 CZK" },
+      {
+        "category": "Partial removable denture",
+        "price": "from 14,000 CZK"
+      }
+    ]
   }
 }

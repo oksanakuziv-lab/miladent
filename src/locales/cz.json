@@ -8,7 +8,7 @@
   "contactModal": {
     "title": "Kontaktujte nás",
     "description1": "Rezervujte si schůzku nyní",
-    "bookButton": "Rezervovat schůzku",
+    "bookButton": "Objednat se",
     "description2": "Nebo vyplňte formulář a my se vám brzy ozveme."
   },
   "contactForm": {
@@ -19,9 +19,9 @@
     "success": "Děkujeme! Vaše zpráva byla úspěšně odeslána."
   },
   "hero": {
-    "title": "Zdravé zuby, klid pro vás.",
-    "subtitle": "Komplexní stomatologická péče – od preventivních kontrol po složité zákroky",
-    "bookingButton": "Rezervovat schůzku",
+    "title": "zuby v pohodě, Vy v klidu",
+    "subtitle": "Komplexní stomatologická péče – od preventivních prohlídek až po složité zákroky",
+    "bookingButton": "Objednat se",
     "features": [
       {
         "title": "Přijímáme nové pacienty",
@@ -37,7 +37,7 @@
       },
       {
         "title": "Moderní vybavení",
-        "desc": "Díky moderní technologii jsou zákroky rychlejší a pohodlnější"
+        "desc": "Díky moderním přístrojům zákroky zaberou méně času a jsou šetrnější"
       }
     ]
   },
@@ -50,77 +50,85 @@
       },
       {
         "title": "Spolupracujeme s pojišťovnami",
-        "description": "VZP 111, OZP 207, ZPMV 211,  VoZP 201, ZPŠ 209."
+        "description": "VZP 111, OZP 207, ZPMV 211,  VoZP 201, ZPŠ 209"
       },
       {
-        "title": "Detailní vyšetřeni a maximální informovanost",
-        "description": "Poskytujeme pečlivou prohlídku a vysvětlujeme každý krok jasně."
+        "title": "Detailní vyšetřeni a maximální informovanost"
       },
       {
-        "title": "Možnost rezervace online",
-        "description": "Jednoduchá online rezervace vám umožní naplánovat návštěvu během několika kliknutí."
+        "title": "Možnost online rezervace termínu"
       },
       {
-        "title": "Respektujeme vaše individuální potřeby",
-        "description": "Personalizovaný přístup s plnou pozorností k vašim jedinečným požadavkům."
+        "title": "Respektujeme Vaše individuální potřeby"
       }
     ]
   },
   "servicesSection": {
     "title": "Služby",
-    "detail": "Detail →",
+    "detail": "Číst dále",
     "services": [
       {
         "id": 1,
-        "title": "Úvodní vyšetření a konzultace",
-        "description": "Profesionální čištění k odstranění plaku, kamene a prevenci onemocnění dásní."
+        "title": "Vstupní vyšetření a konzultace",
+        "description": "Profesionální čištění k odstranění plaku, kamene a prevenci onemocnění dásní.",
+        "imageUrl": "/service1.jpg"
       },
       {
         "id": 2,
         "title": "Dentální hygiena",
-        "description": "Profesionální čištění k odstranění plaku, kamene a prevenci onemocnění dásní."
+        "description": "Profesionální čištění k odstranění plaku, kamene a prevenci onemocnění dásní.",
+        "imageUrl": "/service3.jpg"
       },
       {
         "id": 3,
-        "title": "Ošetření kazu",
-        "description": "Odstranění zubního kazu a výplň pro obnovení zdraví zubu."
+        "title": "Léčba kazu",
+        "description": "Odstranění zubního kazu a výplň pro obnovení zdraví zubu.",
+        "imageUrl": "/service5.jpg"
       },
       {
         "id": 4,
         "title": "Endodoncie",
-        "description": "Ošetření infikované zubní dřeně k záchraně a zachování zubu."
+        "description": "Ošetření infikované zubní dřeně k záchraně a zachování zubu.",
+        "imageUrl": "/service8.jpg"
       },
       {
         "id": 5,
-        "title": "Protetika",
-        "description": "Nahrazení chybějících nebo poškozených zubů korunkami, můstky nebo protézami."
+        "title": "Protetická stomatologie",
+        "description": "Nahrazení chybějících nebo poškozených zubů korunkami, můstky nebo protézami.",
+        "imageUrl": "/service9.jpg"
       },
       {
         "id": 6,
         "title": "Bělení zubů",
-        "description": "Bezpečné a efektivní bělení pro zářivý úsměv."
+        "description": "Bezpečné a efektivní bělení pro zářivý úsměv.",
+        "imageUrl": "/service12.jpg"
       },
       {
         "id": 7,
-        "title": "Extrahování zubu",
-        "description": "Jemné odstranění poškozených nebo problematických zubů."
+        "title": "Extrakce zubů a Implantologie",
+        "description": "Jemné odstranění poškozených nebo problematických zubů.",
+        "imageUrl": "/service14.jpg"
       },
       {
         "id": 8,
-        "title": "Implantologie",
-        "description": "Chirurgické umístění zubních implantátů pro dlouhodobou náhradu zubů."
-      },
-      {
-        "id": 9,
-        "title": "Aplikace botulotoxinu",
-        "description": "Léčba bruxismu a „Gummy Smile“"
+        "title": "Aplikace Botulotoxinu ",
+        "description": "Léčba bruxismu a „Gummy Smile“.",
+        "imageUrl": "/service15.jpg"
       }
     ]
   },
   "aboutSection": {
     "title": "O nás",
     "subtitle": "Péče zaměřená na pacienta",
-    "description": "Dr. Liudmyla Ryboichuk, zubní lékařka, specialistka. Od roku 2011 poskytuje pacientům komplexní stomatologickou péči. Členka České stomatologické komory. Neustále se vzdělává jak v České republice, tak i v zahraničí. Poskytuje kvalitní péči s důrazem na individuální přístup. Specializace: konzervativní stomatologie, endodoncie, protetika a estetická stomatologie.",
+    "name": "Dr. Liudmyla Ryboichuk",
+    "about": [
+      "Zubní lékařka, odborný zástupce.",
+      "Od roku 2011 poskytuje pacientům komplexní stomatologickou péči.",
+      "Členka České stomatologické komory.",
+      "Pravidelně se vzdělává v České republice i v zahraničí.",
+      "Poskytuje vysoce kvalitní péči s důrazem na individuální přístup.",
+      "Specializace: konzervativní stomatologie, endodoncie, protetika a estetická stomatologie."
+    ],
     "missionTitle": "Naše mise",
     "missionDescription": "V Miladent je naší misí podporovat optimální zdraví dutiny ústní a vytvářet dlouhotrvající, sebevědomé úsměvy.",
     "button": "Více informací"
@@ -147,7 +155,7 @@
     "reviews": [
       {
         "name": "K.Š.",
-        "text": "Velmi zkušená dentální lékařka. Při čištění kořenových kanálků jsem nic necítil. Následná rekonstrukce zubu byla provedena tak dobře, že bych ani nepoznal, že byla opravena. V kanceláři hraje příjemná hudba.",
+        "text": "Moc šikovná paní zubařka. Čištění kanálku jsem vůbec necítila. Následná úprava zubu se jí moc povedla. Ani bych nepoznala,že je opravovaný. V ordinaci hraje příjemná hudba.",
         "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
         "rating": 5,
         "date": "03.03.2023",
@@ -155,7 +163,7 @@
       },
       {
         "name": "Olena Burak",
-        "text": "Mockrát děkuji! Celá naše rodina bude chodit jen k vám. Moje první návštěva byla naléhavá – byla jsem v 32. týdnu těhotenství. Hodně mi pomohli a všechno ošetřili. Ještě jednou moc děkuji!",
+        "text": "Moc Vám děkujeme! Celá naše rodina bude nadále chodit jen k Vám. Moje první návštěva byla akutní – byla jsem těhotná v 32. týdnu. Velmi mi pomohli a vše vyléčili. Ještě jednou Vám moc děkuji!",
         "link": "https://maps.app.goo.gl/YuJUypWDWzasypTe9",
         "rating": 5,
         "date": "05.09.2025",
@@ -163,7 +171,7 @@
       },
       {
         "name": "Daria Butorova",
-        "text": "Nejlepší stomatologie v Praze. Jsou velmi pečliví a zodpovědní. Mám velký strach ze zubařů 🙈, ale do Miladentu vždy chodím s radostí a bez obav. Velmi doporučuji!",
+        "text": "Nejlepší stomatologie v Praze. Jsou velmi pečliví a zodpovědní. Mám velký strach ze zubařů 🙈, ale do Miladentu chodím vždy s radostí a bez obav. Doporučuji!",
         "link": "https://maps.app.goo.gl/QaG8Us1jP3KjiyWF6",
         "rating": 5,
         "date": "21.08.2025",
@@ -171,7 +179,7 @@
       },
       {
         "name": "Pašková",
-        "text": "Velké díky doktorce, je úžasná a milá, a podle dnešních standardů jsou ceny velmi rozumné!",
+        "text": "Paní doktorce moc děkuji je úžasná a hodná a na dnešní dobu má velice přijatelné ceny!",
         "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
         "rating": 5,
         "date": "22.02.2023",
@@ -179,7 +187,7 @@
       },
       {
         "name": "A.V.",
-        "text": "Hezká, nová ordinace s vynikající dopravní dostupností. Doktorka je velmi milá a čekací doba nebyla vůbec (měl/a jsem schůzku v 8:00, hned na začátku ordinačních hodin :).",
+        "text": "Hezká, nová ordinace se skvělou dopravní dostupností. Paní doktorka je moc milá, čekací doba žádná (byla jsem objednána na 8, hned na začátku ordinační doby :))..",
         "link": "https://www.znamylekar.cz/liudmyla-ryboichuk/zubar/praha#profile-reviews",
         "rating": 5,
         "date": "05.01.2023",
@@ -187,7 +195,7 @@
       },
       {
         "name": "Oleksandra Kolchar",
-        "text": "Děkuji doktorce za opravu situace způsobené zubařem na Ukrajině. Můžu ji vřele doporučit a jsem velmi vděčná za její lidský přístup.",
+        "text": "Děkuji paní doktorce za to, že napravila situaci, kterou způsobil zubní lékař na Ukrajině. Paní doktorku mohu vřele doporučit a jsem jí velmi vděčná za její lidský přístup.Díky její profesionalitě, trpělivosti a pečlivé práci jsem se opět mohla cítit v bezpečí. Takových lékařů si velmi vážím a přeji jí hodně spokojených pacientů.",
         "link": "https://maps.app.goo.gl/rHRiABzwgas6hV826",
         "rating": 5,
         "date": "13.09.2025",
@@ -195,8 +203,8 @@
       },
       {
         "name": "Alina Malash",
-        "text": "Děkujeme doktorce za vynikající péči. S manželem navštěvujeme kliniku několik let pro pravidelné čištění a ošetření zubů a vždy jsme byli velmi spokojeni. Přístup je profesionální, důkladný a zároveň lidský. Velmi oceňujeme pozornost, klid a ochotu vše vysvětlit. Doporučujeme všem!",
-        "link": "https://maps.app.goo.gl/rHRiABzwgas6hV826",
+        "text": "Děkujeme paní doktorce za skvělou péči.S manželem docházíme do ordinace už několik let na pravidelné čištění i ošetření zubů a vždy jsme velmi spokojení. Přístup je profesionální, pečlivý a zároveň lidský. Velmi si vážíme pozornosti, klidu a ochoty vše vysvětlit. Můžeme jen doporučit!",
+        "link": "https://maps.app.goo.gl/3e6Vq8oLW4NawZsb7",
         "rating": 5,
         "date": "29.08.2025",
         "source": "google"
@@ -214,11 +222,209 @@
       "Poskytuje vysoce kvalitní péči s důrazem na individuální přístup.",
       "Specializace: konzervativní stomatologie, endodoncie, protetika a estetická stomatologie."
     ],
-    "quote": "Rozumím každému z vás — zejména pokud jste měli v minulosti nepříjemné zkušenosti se zubním ošetřením nebo jste dosud nevěnovali velkou pozornost ústnímu zdraví. Každému pacientovi věnujeme čas, trpělivost a jemnou, bezbolestnou péči, vždy se zaměřujeme na vaše pohodlí. Jsme tu proto, abyste se nemuseli bát vrátit, ale naopak se vraceli s jistotou, že o svůj úsměv pečujete co nejlépe.",
+    "quote": "Každému z vás rozumím. Zvlášť pokud  máte špatné předchozí zkušenosti se zubním ošetřením nebo jste do teď péči o zuby nijak moc neřešily. Každému pacientovi věnujeme čas, trpělivost a šetrnou péči bez bolesti s důrazem na Vaši pohodu. Jsme tu pro vás, abyste se k nám nebáli vracet, ale naopak přicházeli s vědomím, že o svůj úsměv pečujete tím nejlepším způsobem.",
     "position": "Zakladatelka kliniky Miladent"
   },
   "equipment": {
     "title": "Moderní vybavení pro vaše pohodlí",
     "description": "Špičková technologie se setkává s pohodlím pacienta. Moderní vybavení zajišťuje nejvyšší standard péče."
+  },
+  "services": {
+    "title": "Naše služby",
+    "items": [
+      {
+        "id": 1,
+        "name": "Vstupní vyšetření a konzultace",
+        "title": "Poradíme vám osobně a individuálně",
+        "description": [
+          {
+            "subtitle": "Rozumíme tomu, že na výběru zubního lékaře si člověk dává patřičně záležet.",
+            "text": "Právě proto mohou pojištěnci smluvních pojišťoven ZDARMA absolvovat vstupní prohlídku, na základě které se rozhodnou, zda jim náš přístup a péče vyhovují. Obvyklá doba trvání je 30 min. Vstupní vyšetření je nezávazné pro obě strany"
+          },
+          {
+            "subtitle": "Jak probíhá první návštěva?",
+            "list": [
+              "Vyplníte jednoduchý dotazník",
+              "Provedeme vyšetření zubů a dásní",
+              "Zhotovíme RTG snímky",
+              "Uděláme návrh plánu léčby s orientační cenovou kalkulací a postupem ošetření"
+            ]
+          }
+        ],
+        "images": ["/service1.jpg", "/service2.jpg"]
+      },
+      {
+        "id": 2,
+        "name": "Dentální hygiena",
+        "title": "Profesionální dentální hygiena pro zdravé dásně",
+        "description": [
+          {
+            "subtitle": "Co zahrnuje dentální hygiena?",
+            "list": [
+              "odstranění zubního kamene a plaku",
+              "pískování (AirFlow) pro krásně čisté a hladké zuby",
+              "fluoridace pro posílení skloviny",
+              "individuální instruktáž správné domácí péče"
+            ]
+          },
+          {
+            "subtitle": "",
+            "text": "Pravidelná dentální hygiena je základem zdravých zubů a dásní. Pomáhá předcházet vzniku zubního kazu, zánětu dásní i parodontitidy."
+          }
+        ],
+        "images": ["/service3.jpg", "/service4.jpg"]
+      },
+      {
+        "id": 3,
+        "name": "Léčba kazu",
+        "title": "Moderní bezbolestná léčba zubního kazu",
+        "description": [
+          {
+            "subtitle": "Pokud máte následující potíže, je potřeba se objednat na prohlídku:",
+            "list": [
+              "citlivost na teplé či studené nápoje",
+              "mírná bolest při kousání",
+              "tmavá skvrna nebo “díra” v zubu",
+              "drobné praskliny či odštípnutí"
+            ],
+            "text": "Lékař při prohlídce včas odhalí počínající onemocnění. Pokud se jedná o kaz, řešením je zhotovení zubní výplně."
+          },
+          {
+            "subtitle": "Výměna amalgámových plomb za bílé kompozitní",
+            "text": "Nabízíme šetrnou a estetickou náhradu starých amalgámových plomb za moderní bílé kompozitní výplně."
+          },
+          {
+            "subtitle": "Výhody bílých kompozitních výplní:",
+            "list": [
+              "přirozený vzhled – splynou s barvou zubu",
+              "pevnost a dlouhá životnost",
+              "možnost šetrnějšího ošetření s menším broušením zubu"
+            ]
+          },
+          {
+            "subtitle": "Nevýhody amalgámových plomb:",
+            "list": [
+              "mohou oslabit zub vlivem rozpínání",
+              "obsahují rtuť, jejíž použití je dnes omezené",
+              "postupem času mohou způsobovat zbarvení okolní zubní tkáně"
+            ],
+            "text": "Pokud chcete mít zdravé zuby, obraťte se na nás a my Vám doporučíme nejlepší metodu ošetření, která pro Vás bude ideální"
+          }
+        ],
+        "images": ["/service5.jpg"]
+      },
+      {
+        "id": 4,
+        "name": "Endodoncie",
+        "title": "Ošetření kořenových kanálků",
+        "description": [
+          {
+            "subtitle": "Pokud vás trápí:",
+            "list": [
+              "silná bolest zubu",
+              "intenzivní bolest doprovázená otokem dásně, a dokonce bolestí hlavy",
+              "bolest zubu na skus",
+              "zánět v oblasti kořenů"
+            ],
+            "text": "Pravděpodobně, že potřebujete ošetření kořenových kanálků (endodoncie)."
+          },
+          {
+            "subtitle": "",
+            "text": "Díky moderním postupům a přístrojům dokážeme ošetřit kořenové kanálky cestou vyčištění a dezinfekci kořenových kanálků, a následným hermetickým zaplněním kanálků speciálním materiálem. Pak následuje rekonstrukce Vášeho zubu."
+          },
+          {
+            "subtitle": "VŠECHNY VÝKONY STANDARDNĚ PROVÁDÍME ZA POMOCÍ KOFFERDAMU",
+            "text": "(gumová blána, obepínající ošetřovaný zub, která brání kontaminaci zubu slinou, či krví, zabraňuje vtékání tekutin do krku pacienta při zubních ošetřeních)"
+          }
+        ],
+        "images": ["/service7.jpg", "/service8.jpg"]
+      },
+      {
+        "id": 5,
+        "name": "Protetická stomatologie",
+        "title": "Náhrady zubů s přirozeným vzhledem a funkcí",
+        "description": [
+          {
+            "text": "Protetika pomáhá nahradit zuby, které chybí nebo jsou výrazně poškozené. Díky moderním metodám a materiálům dokážeme vrátit vašim zubům nejen funkci, ale i přirozený vzhled.",
+            "subtitle": "Co zahrnuje protetika?",
+            "list": [
+              "korunky a můstky",
+              "fazety pro estetické úpravy zubů",
+              "částečné a celkové snímatelné náhrady",
+              "moderní fixní náhrady na implantátech"
+            ]
+          },
+          {
+            "subtitle": "Intraorální skener",
+            "text": "Moderní technologie pro rychlé a přesné snímání vašich zubů a ústní dutiny bez nepohodlných otiskovacích hmot. Intraorální skener vytváří digitální 3D model, který nám umožňuje přesně plánovat ošetření, výrobu korunek, fazet nebo rovnátek. Vyšetření je pohodlné, rychlé a bezbolestné, s okamžitou vizualizací výsledku."
+          }
+        ],
+        "images": ["/service9.jpg", "/service10.jpg"]
+      },
+      {
+        "id": 6,
+        "name": "Bělení zubů",
+        "title": "Bezpečné bělení pro zářivý úsměv",
+        "description": [
+          {
+            "subtitle": "Na naši klinice nabízíme domácí bělení zubů.",
+            "text": "Na základě otisků/skenu vašich zubů vyrobíme perfektně těsné nosiče. Do nosičů se aplikuje speciální gel. Nosiče s bělícím gelem se nechávají v ústech několik hodin, nejlepší dobou je noc, kdy člověk méně sliní. Proces nočního bělení se pak opakuje po dobu 5-14 dnů podle doporučení zubního lékaře nebo dentální hygienistky."
+          }
+        ],
+        "images": ["/service11.jpg", "/service12.jpg"]
+      },
+      {
+        "id": 7,
+        "name": "Extrakce zubů a Implantologie",
+        "title": "Moderní implantologie a bezbolestné extrakce",
+        "description": [
+          {
+            "subtitle": "Implantace je poměrně jednoduchý chirurgický výkon, kterého se nemusíte obávat.",
+            "text": "Nejdříve provedeme pečlivou analýzu stavu situace ve Vašich ústech. Náš zubní lékař - implantolog opatrně \"vsadí\" implantát do Vaší čelistní kosti. Implantaci provádíme na běžném zubařském křesle v místní anestezii, zákrok trvá přibližně 30 minut. Po implantaci odcházíte normálně domů. Po dobu 3 - 6 měsíců probíhá hojení, během kterého se vytvoří pevné spojení mezi kostí a implantátem. Pak následuje 2 fáze - zhotovení korunky na implantátu."
+          }
+        ],
+        "images": ["/service13.jpg", "/service14.jpg"]
+      },
+      {
+        "id": 8,
+        "name": "Aplikace Botulotoxinu",
+        "title": "Léčba bruxismu a “gummy smile”",
+        "description": [
+          {
+            "subtitle": "",
+            "text": "Pomáháme zmírnit nadměrné zatínání čelistí (bruxismus) a upravit stav, kdy se při úsměvu odhaluje příliš velká část dásní (“gummy smile”) pomocí bezpečné aplikace botulotoxinu. Zákrok je rychlý, přesný a šetrný, s přirozeným výsledkem, který zlepšuje komfort i estetiku úsměvu. Společně s používáním chrániče proti bruxismu na noc lze docílit dobré výsledky v léčbě bruxismu."
+          }
+        ],
+        "images": ["/service15.jpg", "/service16.jpg"]
+      }
+    ]
+  },
+  "pricesSection": {
+    "title": "Naše ceny",
+    "description": [
+      "Tento ceník má orientační charakter, v ordinaci Vám sestavíme přesnou kalkulaci vaší léčby",
+      "Můžete platit mobilem (převodem) nebo v hotovosti",
+      "Spolupracujeme se zdravotními pojišťovnami: VZP 111, ZPMV 211, OZP 207, ČPZP 205, ZPŠ 209",
+      "Dětské pacienty přijímáme pouze jsou-li u nás zaregistrováni rodiče"
+    ]
+  },
+  "pricesList": {
+    "list": [
+      {
+        "category": "Vstupní vyšetření + léčebný plán",
+        "price": "Hrazeno ZP"
+      },
+      { "category": "Kompozitní výplň", "price": "od 2900 Kč" },
+      { "category": "Endodontické ošetření", "price": "od 4500 Kč" },
+      { "category": "Korunka celokeramická", "price": "11 500 Kč" },
+      { "category": "Dentální hygiena", "price": "2000 Kč" },
+      {
+        "category": "Dentální hygiena - recall po 6 měsících",
+        "price": "1600 Kč"
+      },
+      { "category": "Domácí bělení", "price": "4500 Kč" },
+      { "category": "Implantace", "price": "od 17 000 Kč" },
+      { "category": "Částečná snímatelná náhrada", "price": "od 14 000 Kč" }
+    ]
   }
 }

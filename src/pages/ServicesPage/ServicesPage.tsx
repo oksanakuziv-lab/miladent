@@ -1,3 +1,5 @@
+import { ClinicServices } from './components/ClinicServices';
+
 export const ServicesPage = () => {
-  return <p></p>;
+  return <ClinicServices />;
 };

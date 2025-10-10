@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Language } from '../../types/types';
 import { changeLanguage } from '../../locales/i18n';
+import React from 'react';
 
 const languages = [
   { code: 'en', label: 'EN' },
@@ -73,9 +74,8 @@ export const LanguageSwitcher = () => {
 
       <div className="flex gap-4 md:hidden">
         {languages.map((lang) => (
-          <>
+          <React.Fragment key={lang.code}>
             <button
-              key={lang.code}
               onClick={() => setCurrentLang(lang)}
               className={`text-md ${
                 currentLang.code === lang.code ?
@@ -86,7 +86,7 @@ export const LanguageSwitcher = () => {
               {lang.label}
             </button>
             <span>|</span>
-          </>
+          </React.Fragment>
         ))}
       </div>
     </>

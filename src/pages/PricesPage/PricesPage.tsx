@@ -1,3 +1,11 @@
+import { PricesList } from './components/PricesList';
+import { PricesSection } from './components/PricesSection';
+
 export const PricesPage = () => {
-  return <p></p>;
+  return (
+    <>
+      <PricesSection />
+      <PricesList />
+    </>
+  );
 };
