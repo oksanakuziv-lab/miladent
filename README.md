@@ -25,6 +25,9 @@ A responsive and modern website for a dental clinic, developed from scratch to s
 - **Swiper.js**
 - **Parcel bundler**
 - **HTML5**
+- **i18next**
+- **radix-ui**
+- **react-router-dom**
 
 ## 📌 About the Project
 
